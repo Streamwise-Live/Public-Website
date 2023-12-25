@@ -1,0 +1,154 @@
+#section-top-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4vw;
+    overflow: visible;
+}
+
+#section-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+#section-top-content {
+    color: var(--colour-primary);
+    justify-content: space-between;
+    width: 35vmax;
+    overflow: hidden;
+    margin-right: 2vmax;
+}
+
+#section-top-content h3 {
+    margin-top: 1.5rem;
+}
+
+#section-top-img {
+    width: 45vmax;
+    margin-left: 2rem;
+    height: 100%;
+    display: flex;
+    align-items: baseline;
+    margin-top: 2rem;
+}
+
+#section-top-img img {
+    width: 100%;
+}
+
+#section-top-button {
+    margin-top: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+/* ------------------------------------- */
+
+#section-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-background-primary);
+}
+
+#section-desc-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin-top: 8vmax;
+}
+
+#section-desc-content {
+    width: 25vmax;
+}
+
+#section-desc-content h2 {
+    font-weight: 600;
+}
+
+#section-desc-content h3 {
+    margin-top: 1.5rem;
+}
+
+#section-desc-button {
+    margin-top: 4vmax;
+}
+
+/* ------------------------------------- */
+
+#section-ml {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 2vmax;
+}
+
+#section-ml-content {
+    width: 35vmax;
+    overflow: hidden;
+}
+
+#section-ml-content h3 {
+    margin-top: 2vmax;
+}
+
+#section-ml-img {
+    width: 25vmax;
+}
+
+#section-ml-img img {
+    width: 100%;
+}
+
+/* ------------------------------------- */
+
+#section-test-wrapper {
+    height: 100%;
+    color: var(--color-background-primary);
+}
+
+#section-test {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#section-test-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6vmax;
+}
+
+#section-test-button {
+    margin-top: 1.5rem;
+}
+
+#test-links {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    width: 6vmax;
+    margin-right: 3vw;
+    margin-top: 1rem;
+}
+
+#test-links li a {
+    display: flex;
+    width: 1.25rem;
+}
+
+#test-links li a img {
+    width: 100%;
+}

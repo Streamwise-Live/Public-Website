@@ -1,0 +1,173 @@
+* {
+    scroll-behavior: smooth;
+
+    font-family: 'Poppins';
+    overflow-x: hidden;
+    user-select: none;
+    margin: 0;
+
+    /*primary colors*/
+    --color-primary: #4696FC;
+    --color-secondary: #2F9DED;
+    --color-tertiary: #0065AE;
+
+    /*typography & button colors*/
+    --color-text: #1b1b1b;
+    --color-text-secondary: #F5F5F5;
+
+    /*background colors*/
+    --color-background-primary: #F5F5F5;
+}
+
+a {text-decoration: none}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    background-color: var(--color-background-primary);
+
+    /* -ms-overflow-style: none;
+    scrollbar-width: none;  */
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+/* ------------------------------------- */
+
+h1 {
+    font-size: 5vmax;
+    line-height: 5vmax;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 2.1vmax; 
+    line-height: 3vmax;  
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1.2vmax;
+}
+
+h4 {
+    font-size: 1vmax;
+}
+
+h5 {
+    font-size: 0.8vmax;
+}
+
+/* ------------------------------------- */
+
+::-webkit-scrollbar {
+    width: 0.75vmax;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-background-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--colour-primary);
+}
+
+/* ------------------------------------- */
+
+.main-button, .sub-button {
+    padding-right: 1.75rem;
+    padding-left: 1.75rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.main-button {
+    background-color: var(--color-text);
+}
+
+.main-button a {
+    color: var(--color-text-secondary)
+}
+
+.main-button a h5, .main-button a h4, .sub-button a h5, .sub-button a h4 {
+    font-weight: 500;
+}
+
+.main-button:hover, .sub-button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(rgb(0 0 0/20%) 0 0);
+}
+
+.sub-button {
+    background-color: var(--color-primary);
+}
+
+.sub-button a {
+    color: var(--color-text-secondary)
+}
+
+/* ------------------------------------- */
+
+section {
+    height: 91vh;
+    width: 100vw;
+}
+
+.section-wrapper {
+    margin-left: 8vmax;
+    margin-right: 8vmax;
+    margin-top: 8vmax;
+    margin-bottom: 2.5vmax;
+}
+
+.section-light {
+    background-color: var(--color-background-primary);
+}
+
+.section-dark {
+    background-color: var(--color-primary)
+}
+
+/* ------------------------------------- */
+
+.divider {
+    display: block;
+    width: 100%;
+    border-top: 2px solid var(--color-background-primary);
+}
+
+/* ------------------------------------- */
+
+.footer h2 {
+    margin-top: 2rem;
+}
+
+.footer h4{
+    font-weight: 400;
+}
+
+/* ------------------------------------- */
+
+input[type=text] {
+    width: 20vmax;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    box-sizing: border-box;
+    border: none;
+}

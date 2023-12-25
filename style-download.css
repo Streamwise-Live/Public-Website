@@ -1,0 +1,52 @@
+#section-download-wrapper {
+    overflow: hidden;
+}
+
+#section-download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-background-primary);
+    height: 100%;
+    overflow: hidden;
+}
+
+#section-download h3 {
+    width: 50vmax;
+    margin-top: 2rem;
+}
+
+#section-download-sub {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#section-download-sub form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section-download-outro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    width: 20vmax;
+    text-align: center;
+}
+
+#section-download-outro h4{
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.download-links {
+    margin: 0 !important;
+}
+
