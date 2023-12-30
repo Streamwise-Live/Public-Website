@@ -3,47 +3,60 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>LiveGuard - Real-Time Editing, Real-Time Results</title>
-        <link rel="stylesheet" href="style-index.css">
         <link rel="stylesheet" href="style-main.css">
         <link rel="stylesheet" href="style-nav.css">
+        <link rel="stylesheet" href="style-index.css">
+
+        <link rel="stylesheet" href="m-style-index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="assets/logo.svg">
     </head>
     <body>
         <nav>
             <div class="nav-content">
-                <span></span>
-                <span></span>
-                <span></span>
                 <div class="nav-logo">
                     <a href="index.html">
                         <img src="assets/logo.svg">
                     </a>
-                </div>         
+                </div>
+                <!-- <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <input type="checkbox" class="hamburger-check"/>
+                </div>       -->
             </div>
             <ul class="nav-links">
                 <li><a href="mailto:contact@liveguard.ca"><img src="assets/gmail.svg"></a></li>
                 <li><a href="https://www.linkedin.com/company/liveguard/" target="_blank"><img src="assets/linkedin.svg"></a></li>
                 <li><a href="https://www.instagram.com/liveguard.ca/" target="_blank"><img src="assets/instagram.svg"></a></li>
-                <div id="contact-button-wrapper">
-                    <div class="main-button" id="contact-button">
-                        <a href="download.html">
-                            <h5>Download<span class="main-button-img-wrapper"></span></h5>
-                        </a>
+                <li>
+                    <div id="contact-button-wrapper">
+                        <div class="main-button" id="contact-button">
+                            <a href="download.html">
+                                <div class="button-img">
+                                    <img src="assets/download-white.svg">
+                                </div>
+                                <h4>Download<span class="main-button-img-wrapper"></span></h4>
+                            </a>
+                        </div>
                     </div>
-                </div>
+                </li>
             </ul>
         </nav>
         <section class="section-light" id="section-top-wrapper">
             <div class="section-wrapper" id="section-top">
                 <div id="section-top-content">
                     <h1>REAL-TIME EDITING, REAL-TIME RESULTS.</h1>
-                    <h3>Protect your content by using <B>Machine Learning</B> to detect threats and avoid sanctions and demonetizations. High-quality and simpler live streaming for content creators on <i><u>Twitch</u></i>, <i><u>Youtube</u></i>, <i><u>Instagram</u></i> and <i><u>TikTok</u></i>.</h3>
-                    <button class="sub-button" id="section-top-button">
+                    <h3>Protect your content by using Machine Learning to detect threats and avoid sanctions and demonetizations for content creators on <i>Twitch</i>, <i>Youtube</i>, <i>Instagram</i> and <i>TikTok</i>.</h3>
+                    <div class="main-button" id="section-top-button">
                         <a href="download.html">
-                            <h4>Download</h4>
+                            <div class="button-img">
+                                <img src="assets/download-white.svg">
+                            </div>
+                            <h4>Download<span class="main-button-img-wrapper"></span></h4>
                         </a>
-                    </button>
+                    </div>
                 </div>
                 <div id="section-top-img">
                     <img src="assets/svg/computer-live.svg">
@@ -67,11 +80,14 @@
                         <h3>LiveGuard works with your existing tools to enhance your streaming experience instead of replacing it for an easy adaptation. Use <i>plugins</i> to communicate with your desired platforms.</h3>
                     </div>
                 </div>
-                <button class="main-button" id="section-desc-button">
+                <div class="main-button" id="section-desc-button">
                     <a href="download.html">
-                        <h4>Download</h4>
+                        <div class="button-img">
+                            <img src="assets/download-white.svg">
+                        </div>
+                        <h4>Download<span class="main-button-img-wrapper"></span></h4>
                     </a>
-                </button>
+                </div>
             </div>
         </section>
         <section class="section-light" id="section-ml-wrapper">
@@ -82,11 +98,14 @@
                 <div id="section-ml-content">
                     <h1>LIVEGUARD..</h1>
                     <h3>…uses <b>Machine Learning</b> to understand the context of the live stream, then edit its video and audio. <br><br>It censors or replaces recognized <i>copyrighted content</i> and <i>platform specific terms of service violations.</i></h3>
-                    <button class="sub-button" id="section-top-button">
+                    <div class="main-button" id="section-top-button">
                         <a href="download.html">
-                            <h4>Download</h4>
+                            <div class="button-img">
+                                <img src="assets/download-white.svg">
+                            </div>
+                            <h4>Download<span class="main-button-img-wrapper"></span></h4>
                         </a>
-                    </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -112,7 +131,7 @@
                 <div class="footer">
                     <h2>LiveGuard</h2>
                     <h4>Montreal, Canada</h4>
-                    <ul id="test-links">
+                    <ul id="test-links" >
                         <li><a href="mailto:contact@liveguard.ca"><img src="assets/gmail.svg"></a></li>
                         <li><a href="https://www.linkedin.com/company/liveguard/" target="_blank"><img src="assets/linkedin.svg"></a></li>
                         <li><a href="https://www.instagram.com/liveguard.ca/" target="_blank"><img src="assets/instagram.svg"></a></li>
