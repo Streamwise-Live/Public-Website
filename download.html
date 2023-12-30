@@ -7,32 +7,41 @@
         <link rel="stylesheet" href="style-main.css">
         <link rel="stylesheet" href="style-nav.css">
         <link rel="stylesheet" href="style-download.css">
+        <link rel="stylesheet" href="m-style-download.css">
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="assets/logo.svg">
     </head>
     <body>
         <nav>
             <div class="nav-content">
-                <span></span>
-                <span></span>
-                <span></span>
                 <div class="nav-logo">
                     <a href="index.html">
                         <img src="assets/logo.svg">
                     </a>
-                </div>         
+                </div>
+                <!-- <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <input type="checkbox" class="hamburger-check"/>
+                </div>       -->
             </div>
             <ul class="nav-links">
                 <li><a href="mailto:contact@liveguard.ca"><img src="assets/gmail.svg"></a></li>
                 <li><a href="https://www.linkedin.com/company/liveguard/" target="_blank"><img src="assets/linkedin.svg"></a></li>
                 <li><a href="https://www.instagram.com/liveguard.ca/" target="_blank"><img src="assets/instagram.svg"></a></li>
-                <div id="contact-button-wrapper">
-                    <div class="main-button" id="contact-button">
-                        <a href="download.html">
-                            <h5>Download<span class="main-button-img-wrapper"></span></h5>
-                        </a>
+                <li>
+                    <div id="contact-button-wrapper">
+                        <div class="main-button" id="contact-button">
+                            <a href="download.html">
+                                <div class="button-img">
+                                    <img src="assets/download-white.svg">
+                                </div>
+                                <h4>Download<span class="main-button-img-wrapper"></span></h4>
+                            </a>
+                        </div>
                     </div>
-                </div>
+                </li>
             </ul>
         </nav>
         <section class="section-dark" id="section-download-wrapper">
