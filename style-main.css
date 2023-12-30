@@ -7,7 +7,7 @@
     margin: 0;
 
     /*primary colors*/
-    --color-primary: #4696FC;
+    --color-primary: #0088EB;
     --color-secondary: #2F9DED;
     --color-tertiary: #0065AE;
 
@@ -17,6 +17,7 @@
 
     /*background colors*/
     --color-background-primary: #F5F5F5;
+    --color-background-secondary: #EEEEEE;
 }
 
 a {text-decoration: none}
@@ -48,8 +49,8 @@ body {
 /* ------------------------------------- */
 
 h1 {
-    font-size: 5vmax;
-    line-height: 5vmax;
+    font-size: 4.5vmax;
+    line-height: 4.5vmax;
     overflow: hidden;
 }
 
@@ -60,79 +61,119 @@ h2 {
 
 h3 {
     font-weight: 400;
-    font-size: 1.2vmax;
+    font-size: 1.1vmax;
 }
 
 h4 {
-    font-size: 1vmax;
+    font-size: 0.9vmax;
 }
 
 h5 {
     font-size: 0.8vmax;
 }
 
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 6vh;
+        line-height: 6vh;
+    }
+
+    h3 {
+        font-size: 2vh;
+    }
+
+    h4 {
+        font-size: 2.25vh;
+    }
+
+    h5 {
+        font-size: 1vh;
+    }
+}
+
 /* ------------------------------------- */
 
 ::-webkit-scrollbar {
-    width: 0.75vmax;
+    width: 0.5vw;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--color-background-primary);
+    background-color: var(--color-background-primary);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--colour-primary);
+    background-color: var(--color-primary);
 }
 
 /* ------------------------------------- */
 
-.main-button, .sub-button {
-    padding-right: 1.75rem;
-    padding-left: 1.75rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border-radius: 0.5rem;
-    border: none;
-}
-
 .main-button {
+    padding-right: 1.25vmax;
+    padding-left: 1.25vmax;
+    padding-top: 0.75vmax;
+    padding-bottom: 0.75vmax;
+    border-radius: 0.5vmax;
+    border: none;
     background-color: var(--color-text);
 }
 
 .main-button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--color-text-secondary)
 }
 
-.main-button a h5, .main-button a h4, .sub-button a h5, .sub-button a h4 {
+.button-img {
+    width: 1.5vmax;
+    margin-right: 1vmax; 
+}
+
+.button-img img {
+    width: 100%;
+}
+
+.main-button a h4 {
     font-weight: 500;
 }
 
-.main-button:hover, .sub-button:hover {
+.main-button:hover {
     cursor: pointer;
     background-image: linear-gradient(rgb(0 0 0/20%) 0 0);
 }
 
-.sub-button {
-    background-color: var(--color-primary);
-}
+@media screen and (max-width: 1024px) {
+    .main-button {
+        padding-right: 2vmax;
+        padding-left: 2vmax;
+        padding-top: 1.5vmax;
+        padding-bottom: 1.5vmax;
+    }
 
-.sub-button a {
-    color: var(--color-text-secondary)
+    .button-img {
+        width: 2.5vmax;
+    }
 }
 
 /* ------------------------------------- */
 
 section {
-    height: 91vh;
-    width: 100vw;
+    height: 90vh;
+    width: 99.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .section-wrapper {
-    margin-left: 8vmax;
-    margin-right: 8vmax;
-    margin-top: 8vmax;
-    margin-bottom: 2.5vmax;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .section-light {
@@ -153,6 +194,11 @@ section {
 
 /* ------------------------------------- */
 
+.footer {
+    width: 100%;
+    height: 100%;
+}
+
 .footer h2 {
     margin-top: 2rem;
 }
@@ -170,4 +216,22 @@ input[type=text] {
     margin-right: 1rem;
     box-sizing: border-box;
     border: none;
+}
+
+input, input::placeholder {
+    font-size: 0.9vmax; 
+}
+
+@media screen and (max-width: 1024px) {
+    input[type=text] {
+        width: 50vw;
+        padding: 2vh;
+        border-radius: 0.25rem;
+        margin-right: 0.5rem;
+    }
+
+    input, input::placeholder {
+        font-size: 1.5vh;
+    }
+    
 }
