@@ -11,6 +11,8 @@
         width: 85%;
     }
     #section-top-img {
+        position: relative;
+        display: inline-block;
         margin: auto;
         align-items: center;
         justify-content: center;
@@ -21,6 +23,26 @@
     #section-top-img img {
         height: 100%;
         width: auto;
+    }
+
+    .section-top-img-decoration {
+        position: absolute;
+        display: inline-block;
+        animation: float-animation 4s infinite;
+        overflow: hidden;
+    }
+
+    
+    @keyframes float-animation {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-1rem);
+        }
+        100% {
+            transform: translateY(0);
+        }
     }
 
     /* ------------------------------------- */
