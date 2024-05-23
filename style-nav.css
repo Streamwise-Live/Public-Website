@@ -15,7 +15,7 @@ nav {
     padding-bottom: 0.75vmax;
 }
 
-.nav-links {
+#nav-links {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,7 +26,7 @@ nav {
     margin-right: 2vmax;
 }
 
-.nav-links li a{
+#nav-links li a{
     width: 1.5rem;
 }
 
@@ -34,7 +34,7 @@ nav {
     width: 100%;
 }
 
-.nav-links li a img {
+#nav-links li a img {
     width: 100%;
 }
 
@@ -53,15 +53,16 @@ nav {
 /* ----------------------------------- */
 
 @media screen and (max-width: 1024px) {
-    .nav-links {
+    #nav-links {
         width: 50%;
+        margin-right: 0;
     }
 
-    .nav-links li a{
+    #nav-links li a{
         display: none;
     }
 
-    .contact-button-wrapper {
+    #contact-button-wrapper {
         width: 100%;
     }
 
