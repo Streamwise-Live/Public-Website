@@ -218,12 +218,44 @@ input[type=text] {
     border: none;
 }
 
+input[type=email] {
+    width: 20vmax;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    box-sizing: border-box;
+    border: none;
+}
+
+select {
+    width: 20vmax;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    box-sizing: border-box;
+    border: none;
+}
+
 input, input::placeholder {
     font-size: 0.9vmax; 
 }
 
 @media screen and (max-width: 1024px) {
     input[type=text] {
+        width: 50vw;
+        padding: 2vh;
+        border-radius: 0.25rem;
+        margin-right: 0.5rem;
+    }
+
+    input[type=email] {
+        width: 50vw;
+        padding: 2vh;
+        border-radius: 0.25rem;
+        margin-right: 0.5rem;
+    }
+
+    select {
         width: 50vw;
         padding: 2vh;
         border-radius: 0.25rem;

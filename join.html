@@ -20,6 +20,8 @@
 
         gtag('config', 'G-0E8SMDYMNX');
         </script>
+
+        <script src="https://web3forms.com/client/script.js" async defer></script>
     </head>
     <body>
         <nav>
@@ -59,14 +61,34 @@
                 <h1>Hey! You're here early!</h1>
                 <h3 style="text-align: center;">Join our beta testing program to get early access to our latest features for <b>FREE</b> and help us innovate a life changing service for all content creators out there.</h3>
                 <div id="section-download-sub">
-                    <form action="/action_page.php">
-                        <input type="text" id="fname" name="fname" placeholder="Email Address"><br><br>
-                    </form>
-                    <button class="main-button" id="section-download-button">
-                        <a href="mailto:contact@liveguard.ca">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="67aa859d-39aa-44af-80b9-76b26cacc4d1">
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                        <input type="text" id="username" name="username" placeholder="Username" required>
+                        <select id="role" name="role" required>
+                            <option value="" disabled selected>What best describes you?</option>
+                            <option value="Full-time Content Creator">Full-time Content Creator</option>
+                            <option value="Part-time Content Creator">Part-time Content Creator</option>
+                            <option value="Influencer">Influencer</option>
+                            <option value="Podcaster">Podcaster</option>
+                            <option value="Educator">Educator</option>
+                            <option value="Content Consumer">Content Consumer</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <select id="frequency" name="frequency" required>
+                            <option value="" disabled selected>How often do you create content?</option>
+                            <option value="Daily">Daily</option>
+                            <option value="Weekly">Weekly</option>
+                            <option value="Monthly">Monthly</option>
+                            <option value="Rarely">Rarely</option>
+                            <option value="Never">Never</option>
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <div class="h-captcha" data-captcha="true"></div>
+                        <button class="main-button" id="section-download-button" type="submit">
                             <h4>Join</h4>
-                        </a>
-                    </button>
+                        </button>
+                    </form>
                 </div>
                 <div id="section-download-outro">
                     <h4><i>Follow us on social media to not miss any updates!</i></h4>
