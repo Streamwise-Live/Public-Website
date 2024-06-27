@@ -50,6 +50,14 @@ nav {
     width: 100%;            
 }
 
+/* Temporary for the language select */
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
 /* ----------------------------------- */
 
 @media screen and (max-width: 1024px) {
