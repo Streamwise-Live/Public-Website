@@ -69,7 +69,7 @@ $(function () {
                         contactButton: 'Contactez-nous',
                         topContent: {
                             title: 'MONTAGE LIVE, RÉSULTATS INSTANTANÉS.',
-                            paragraph: 'Le moyen le plus simple d\'utiliser l\'IA pour redonner du fun à la création de contenu, tout en protégeant votre travail des sanctions et de la démonétisation sur Twitch, YouTube, Instagram et plus encore.'
+                            paragraph: 'Le moyen le plus simple d\'utiliser l\'IA pour retrouver le plaisir à la création de contenu, tout en protégeant votre travail des sanctions et de la démonétisation sur Twitch, YouTube, Instagram et plus encore.'
                         },
                         sectionDesc: {
                             title: 'HAUTE QUALITÉ SANS EFFORT.',
@@ -79,15 +79,15 @@ $(function () {
                             },
                             possibilities: {
                                 title: 'Possibilités illimitées',
-                                paragraph: 'Offrez une configuration de profil illimitée à vos streams sur le cloud avec le multistream, la conception de mises en page, l\'analyse de statistiques et plus encore. Laissez libre cours à votre créativité!'
+                                paragraph: 'Offrez une configuration de profil illimitée à vos streams sur le cloud avec le multistream, la conception de mises en page, l\'analyse de statistiques et plus encore. Libérez votre créativité!'
                             },
                             integration: {
                                 title: 'Intégration facile',
-                                paragraph: 'Intégration transparente avec vos outils et plateformes de streaming préférés. Ne faites jamais de compromis sur votre workflow actuel, sans exception.'
+                                paragraph: 'Intégration transparente avec vos outils et plateformes de streaming préférés. Ne faites jamais de compromis sur votre flux de travail actuel, sans exception.'
                             }
                         },
                         sectionML: {
-                            title: 'LEs CREATEURS D\'ABORD',
+                            title: 'LES CREATEURS D\'ABORD',
                             paragraph1: 'Quelle que soit la plateforme de streaming, vous ne devriez pas avoir à vous soucier des violations de droits d\'auteur et des conditions d\'utilisation imprévisibles et injustes lors du streaming en direct. Diffusez votre meilleur contenu et laissez-nous nous occuper des détails.',
                             paragraph2: 'Nous utilisons l\'IA pour comprendre le contexte de votre livestream afin de générer le contenu et les modifications souhaités pour la vidéo et l\'audio de votre stream.'
                         },
@@ -97,7 +97,7 @@ $(function () {
                         },
                         betaPage: {
                             title: 'Hé! Tu es en avance!',
-                            paragraph: 'Rejoignez notre programme de test bêta pour accéder gratuitement à nos dernières fonctionnalités en avant-première et aidez-nous à innover pour créer un service révolutionnaire pour tous les créateurs de contenu.',
+                            paragraph: 'Rejoignez notre programme de test bêta pour accéder gratuitement à nos dernières fonctionnalités en avant-première et aidez-nous à innover pour créer un service qui va changer le monde pour tous les créateurs de contenu.',
                             outro: 'Suivez-nous sur les réseaux sociaux pour ne manquer aucune mise à jour!'
                         }
                     }
