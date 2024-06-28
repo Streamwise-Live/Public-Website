@@ -68,37 +68,37 @@ $(function () {
                         tryButton: 'Essayez GRATUITEMENT',
                         contactButton: 'Contactez-nous',
                         topContent: {
-                            title: 'MONTAGE EN DIRECT, RESULTATS EN DIRECT.',
-                            paragraph: 'La manière la plus simple d\'utiliser l\'IA afin de redonner du plaisir à la création de contenu tout en protégeant votre travail des sanctions et des démonétisations sur Twitch, Youtube, Instagram, et plus encore.'
+                            title: 'MONTAGE LIVE, RÉSULTATS INSTANTANÉS.',
+                            paragraph: 'Le moyen le plus simple d\'utiliser l\'IA pour redonner du fun à la création de contenu, tout en protégeant votre travail des sanctions et de la démonétisation sur Twitch, YouTube, Instagram et plus encore.'
                         },
                         sectionDesc: {
-                            title: 'HAUTE QUALITÉ, AUCUN EFFORT.',
+                            title: 'HAUTE QUALITÉ SANS EFFORT.',
                             protection: {
                                 title: 'Protection en temps réel',
-                                paragraph: 'Personnalisez nos modèles d\'IA pour améliorer l\'audio et la vidéo de votre stream en filtrant le contenu indésirable en temps réel. Reprenez le contrôle de votre contenu et évitez les sanctions des plateformes.'
+                                paragraph: 'Personnalisez nos modèles d\'IA pour améliorer le son et la vidéo de votre stream en filtrant le contenu indésirable en temps réel. Reprenez le contrôle de votre livestream et évitez les pénalités des plateformes.'
                             },
                             possibilities: {
-                                title: 'Possibilités infinies',
-                                paragraph: 'Créez des configurations de profil illimitées pour vos streams sur le cloud avec le multistream, les designs stylistiques, l\'analyse des statistiques, et plus encore. Soyez créatifs!'
+                                title: 'Possibilités illimitées',
+                                paragraph: 'Offrez une configuration de profil illimitée à vos streams sur le cloud avec le multistream, la conception de mises en page, l\'analyse de statistiques et plus encore. Laissez libre cours à votre créativité!'
                             },
                             integration: {
                                 title: 'Intégration facile',
-                                paragraph: 'S\'intègre parfaitement avec vos outils et plateformes de création de contenu préférés. Ne compromettez jamais votre routine de travail actuelle, sans exceptions.'
+                                paragraph: 'Intégration transparente avec vos outils et plateformes de streaming préférés. Ne faites jamais de compromis sur votre workflow actuel, sans exception.'
                             }
                         },
                         sectionML: {
-                            title: 'CRÉATEUR AVANT TOUT',
-                            paragraph1: 'Peu importe la plateforme, nous croyons que vous ne devriez pas avoir à vous soucier des règles imprévisibles et injustes, telles que le copyright et les violations des conditions d\'utilisation durant vos streams. Publiez votre meilleur contenu et laissez-nous nous occuper des détails.',
-                            paragraph2: 'Nous utilisons l\'IA pour comprendre le contexte de votre livestream afin d\'appliquer le montage souhaité sur la vidéo et l\'audio de votre stream.'
+                            title: 'LEs CREATEURS D\'ABORD',
+                            paragraph1: 'Quelle que soit la plateforme de streaming, vous ne devriez pas avoir à vous soucier des violations de droits d\'auteur et des conditions d\'utilisation imprévisibles et injustes lors du streaming en direct. Diffusez votre meilleur contenu et laissez-nous nous occuper des détails.',
+                            paragraph2: 'Nous utilisons l\'IA pour comprendre le contexte de votre livestream afin de générer le contenu et les modifications souhaités pour la vidéo et l\'audio de votre stream.'
                         },
                         sectionBeta: {
-                            title: 'INTERESSÉS PAR LE BETA-TESTING?',
-                            paragraph: 'Nous sommes toujours à la recherche de créateurs de contenu pour nous aider à construire notre plateforme et apporter de nouvelles idées!'
+                            title: 'INTÉRESSÉ(E) PAR LE PROGRAMME BÊTA?',
+                            paragraph: 'Nous sommes toujours à la recherche de créateurs de contenu pour nous aider à développer notre plateforme et apporter de nouvelles idées!'
                         },
                         betaPage: {
-                            title: 'Vous êtes en avance!',
-                            paragraph: 'Devenez un testeur beta pour accéder à nos dernières fonctionnalités GRATUITEMENT et nous aider à améliorer un service révolutionnaire pour tous les créateurs de contenu.',
-                            outro: 'Suivez-nous sur les réseaux sociaux pour ne rien manquer!'
+                            title: 'Hé! Tu es en avance!',
+                            paragraph: 'Rejoignez notre programme de test bêta pour accéder gratuitement à nos dernières fonctionnalités en avant-première et aidez-nous à innover pour créer un service révolutionnaire pour tous les créateurs de contenu.',
+                            outro: 'Suivez-nous sur les réseaux sociaux pour ne manquer aucune mise à jour!'
                         }
                     }
                 }
