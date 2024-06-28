@@ -22,7 +22,7 @@ nav {
     list-style-type: none;
     padding: 0;
     overflow: hidden;
-    width: 25%;
+    width: 30%;
     margin-right: 2vmax;
 }
 
@@ -47,16 +47,24 @@ nav {
 }
 
 .nav-logo img {
-    width: 100%;            
+    width: 100%;
 }
 
-/* Temporary for the language select */
-.nav-content {
+#languageSwitcher {
+    width: 100%;
+    height: 2rem;
+    background-color: var(--color-primary);
+    color: var(--color-background-primary);
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-right: 2vmax;
+    cursor: pointer;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 50%;
 }
+
 
 /* ----------------------------------- */
 

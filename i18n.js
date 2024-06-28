@@ -1,8 +1,8 @@
 // Code from https://locize.com/blog/jquery-i18next/
 
 const languages = {
-    en: { nativeName: 'English' },
-    fr: { nativeName: 'Français' }
+    en: { nativeName: 'EN' },
+    fr: { nativeName: 'FR' }
 }
 
 const rerender = () => {
