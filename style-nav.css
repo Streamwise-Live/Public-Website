@@ -15,6 +15,14 @@ nav {
     padding-bottom: 0.75vmax;
 }
 
+.nav-content-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+
 #nav-links {
     display: flex;
     align-items: center;
@@ -47,8 +55,24 @@ nav {
 }
 
 .nav-logo img {
-    width: 100%;            
+    width: 100%;
 }
+
+#languageSwitcher {
+    width: 4rem;
+    height: 3rem;
+    background-color: var(--color-primary);
+    color: var(--color-background-primary);
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-right: 2vmax;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* ----------------------------------- */
 

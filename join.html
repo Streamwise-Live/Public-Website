@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <meta name="title" content="LiveGuard">
+        <meta name="description" content="The easiest way of using AI to put the fun back into content creation while protecting your work from sanctions and demonetizations on any platform">
+        <meta name="keywords" content="livestream, live, content, creator, ban, demonetization, AI, editing, editor, tool, platform, video, youtube, twitch, kick, tiktok, obs">
+        <meta name="robots" content="index, follow">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="language" content="English">
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.liveguard.ca/" />
+        <meta property="og:title" content="LiveGuard - Home" />
+        <meta property="og:description" content="The easiest way of using AI to put the fun back into content creation while protecting your work from sanctions and demonetizations on any platform" />
+        <meta property="og:image" content="https://www.liveguard.ca/assets/thumbnail.png" />
+        
         <title>LiveGuard - Real-Time Editing, Real-Time Results</title>
         <link rel="stylesheet" href="style-index.css">
         <link rel="stylesheet" href="style-main.css">
@@ -22,44 +34,45 @@
         </script>
 
         <script src="https://web3forms.com/client/script.js" async defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
+        <script src="i18n.js"></script>
     </head>
     <body>
         <nav>
-            <div class="nav-content">
+            <div class="nav-content-left">
                 <div class="nav-logo">
                     <a href="index.html">
                         <img src="assets/logo-white.svg">
                     </a>
                 </div>
-                <!-- <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <input type="checkbox" class="hamburger-check"/>
-                </div>       -->
             </div>
-            <ul id="nav-links">
-                <li><a href="mailto:contact@liveguard.ca"><img src="assets/gmail.svg"></a></li>
-                <li><a href="https://www.linkedin.com/company/liveguard/" target="_blank"><img src="assets/linkedin.svg"></a></li>
-                <li><a href="https://www.instagram.com/liveguard.ca/" target="_blank"><img src="assets/instagram.svg"></a></li>
-                <li>
-                    <div id="contact-button-wrapper">
-                        <div class="main-button" id="contact-button">
-                            <a href="join.html">
-                                <!-- <div class="button-img">
-                                    <img src="assets/download-white.svg">
-                                </div> -->
-                                <h4>Try it out for <b>FREE</b><span class="main-button-img-wrapper"></span></h4>
-                            </a>
+            <div class="nav-content-right">
+                <select name="language" id="languageSwitcher"></select>
+                <ul id="nav-links">
+                    <!-- <li><select name="language" id="languageSwitcher"></select></li> -->
+                    <li><a href="mailto:contact@liveguard.ca"><img src="assets/gmail.svg"></a></li>
+                    <li><a href="https://www.linkedin.com/company/liveguard/" target="_blank"><img src="assets/linkedin.svg"></a></li>
+                    <li><a href="https://www.instagram.com/liveguard.ca/" target="_blank"><img src="assets/instagram.svg"></a></li>
+                    <li>
+                        <div id="contact-button-wrapper">
+                            <div class="main-button" id="contact-button">
+                                <a href="join.html">
+                                    <h4 data-i18n="tryButton"><span class="main-button-img-wrapper"></span></h4>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <section class="section-dark" id="section-download-wrapper" style="height: 100vh">
             <div class="section-wrapper" id="section-download">
-                <h1>Hey! You're here early!</h1>
-                <h3 style="text-align: center;">Join our beta testing program to get early access to our latest features for <b>FREE</b> and help us innovate a life changing service for all content creators out there.</h3>
+                <h1 data-i18n="betaPage.title"></h1>
+                <h3 style="text-align: center;" data-i18n="betaPage.paragraph"></h3>
                 <div id="section-download-sub">
                     <!-- <form action="https://api.web3forms.com/submit" method="POST">
                         <input type="hidden" name="access_key" value="67aa859d-39aa-44af-80b9-76b26cacc4d1">
@@ -92,7 +105,7 @@
                     <script async src="https://eocampaign1.com/form/88ca21ac-2127-11ef-b9c1-9908c9f76849.js" data-form="88ca21ac-2127-11ef-b9c1-9908c9f76849"></script>
                 </div>
                 <div id="section-download-outro">
-                    <h4><i>Follow us on social media to not miss any updates!</i></h4>
+                    <h4 data-i18n="betaPage.outro"></h4>
                     <ul id="test-links" class="download-links">
                         <li><a href="mailto:contact@liveguard.ca"><img src="assets/gmail.svg"></a></li>
                         <li><a href="https://www.linkedin.com/company/liveguard/" target="_blank"><img src="assets/linkedin.svg"></a></li>
