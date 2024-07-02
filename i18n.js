@@ -69,7 +69,7 @@ $(function () {
                         contactButton: 'Contactez-nous',
                         topContent: {
                             title: 'MONTAGE LIVE, RÉSULTATS INSTANTANÉS.',
-                            paragraph: 'Le moyen le plus simple d\'utiliser l\'IA pour retrouver le plaisir à la création de contenu, tout en protégeant votre travail des sanctions et de la démonétisation sur Twitch, YouTube, Instagram et plus encore.'
+                            paragraph: 'Le moyen le plus simple d\'utiliser l\'IA pour retrouver le plaisir de la création de contenu, tout en protégeant votre travail des sanctions et de la démonétisation sur Twitch, YouTube, Instagram et plus encore.'
                         },
                         sectionDesc: {
                             title: 'HAUTE QUALITÉ SANS EFFORT.',
@@ -79,7 +79,7 @@ $(function () {
                             },
                             possibilities: {
                                 title: 'Possibilités illimitées',
-                                paragraph: 'Offrez une configuration de profil illimitée à vos streams sur le cloud avec le multistream, la conception de mises en page, l\'analyse de statistiques et plus encore. Libérez votre créativité!'
+                                paragraph: 'Accédez à des options de configuration illimitées pour vos streams sur le cloud avec le multistream, la conception de mises en page, l\'analyse de statistiques et plus encore. Libérez votre créativité!'
                             },
                             integration: {
                                 title: 'Intégration facile',

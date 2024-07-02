@@ -59,7 +59,7 @@ nav {
 }
 
 #languageSwitcher {
-    width: 3rem;
+    width: 4rem;
     height: 3rem;
     background-color: var(--color-primary);
     color: var(--color-background-primary);
