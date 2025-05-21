@@ -30,17 +30,17 @@ $(function () {
                         contactButton: 'Contact Us',
                         topContent: {
                             title: 'REAL-TIME EDITING, REAL-TIME RESULTS.',
-                            paragraph: 'The easiest way of using AI to put the fun back into content creation while protecting your work from sanctions and demonetizations on Twitch, Youtube, Instagram, and more.'
+                            paragraph: 'We help you moderate your stream while you\'re live so you can focus on the important stuff.'
                         },
                         sectionDesc: {
-                            title: 'EFFORTLESS HIGH QUALITY.',
+                            title: 'EFFORTLESS EFFICIENT AND QUICK.',
                             protection: {
                                 title: 'Real-time protection',
-                                paragraph: 'Customize our AI models to enhance your stream\'s audio and video by filtering out unwanted content in real-time. Take back control of your livestream and avoid platform penalties.'
+                                paragraph: 'Liveguard monitors your video and audio as you stream, with real-time latency so that any unwanted content is automatically filtered out'
                             },
                             possibilities: {
                                 title: 'Unlimited possibilities',
-                                paragraph: 'Introduce unlimited profile configurations to your streams on the cloud with multistream, layout designs, statistics analysis, and more. Let your creativity run wild!'
+                                paragraph: 'A modular approach allows for endless customization; think outside the box and personalize your stream beyond filtering out unwanted content!'
                             },
                             integration: {
                                 title: 'Seamless integration',
@@ -50,7 +50,7 @@ $(function () {
                         sectionML: {
                             title: 'CREATOR FIRST',
                             paragraph1: 'Regardless of the streaming platform, we believe that you should not have to worry about unpredictable and unfair copyrighted content and ToS violations when livestreaming. Push your best content out there, and let us worry about the details.',
-                            paragraph2: 'We use AI to understand the context within your livestream to generate desired content and edits for your stream\'s video and audio.'
+                            paragraph2: 'We use AI to better understand the context of your livestream to generate desired content and edits for your stream\'s video and audio.'
                         },
                         sectionBeta: {
                             title: 'INTERESTED IN BETA TESTING?',
