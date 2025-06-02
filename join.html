@@ -2,26 +2,31 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
-        <meta name="title" content="LiveGuard">
-        <meta name="description" content="The easiest way of using AI to put the fun back into content creation while protecting your work from sanctions and demonetizations on any platform">
-        <meta name="keywords" content="livestream, live, content, creator, ban, demonetization, AI, editing, editor, tool, platform, video, youtube, twitch, kick, tiktok, obs">
-        <meta name="robots" content="index, follow">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="language" content="English">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="keywords" content="livestream, live, content, creator, ban, demonetization, AI, saas, software, cloud, editing, editor, tool, platform, video, youtube, twitch, kick, tiktok, obs">
+        <meta name="robots" content="index, join, about, how-it-works, features, customize">
+
+        <meta name="title" content="Join LiveGuard">
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.liveguard.ca/" />
-        <meta property="og:title" content="LiveGuard - Home" />
-        <meta property="og:description" content="The easiest way of using AI to put the fun back into content creation while protecting your work from sanctions and demonetizations on any platform" />
+        <meta property="og:url" content="https://www.liveguard.ca/join" />
+        <meta property="og:title" content="Join LiveGuard" />
+        <meta property="og:description" content="Stay focused on your content while our AI moderates in real time, keeping your stream safe, compliant, and free from strikes, bans, and demonetization." />
         <meta property="og:image" content="https://www.liveguard.ca/assets/thumbnail.png" />
         
-        <title>LiveGuard - Real-Time Editing, Real-Time Results</title>
-        <link rel="stylesheet" href="style-index.css">
-        <link rel="stylesheet" href="style-main.css">
-        <link rel="stylesheet" href="style-nav.css">
-        <link rel="stylesheet" href="style-download.css">
-        <link rel="stylesheet" href="m-style-download.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+        <!-- Title -->
+        <title>Join LiveGuard</title>
         <link rel="icon" type="image/x-icon" href="assets/logo.svg">
+
+        <!-- Navbar script -->
+        <script src="nav.js"></script>
+
+        <!-- Style Sheets -->
+        <link rel="stylesheet" href="style-main.css" />
+        <link rel="stylesheet" href="style-nav.css" />
+        <link rel="stylesheet" href="style-join.css" />
+    
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-0E8SMDYMNX"></script>
@@ -33,100 +38,103 @@
         gtag('config', 'G-0E8SMDYMNX');
         </script>
 
-        <script src="https://web3forms.com/client/script.js" async defer></script>
+        <!-- Language -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        
         <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
         <script src="i18n.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@1.3.2/i18nextHttpBackend.min.js"></script>
     </head>
     <body>
-        <nav>
-            <div class="nav-content-left">
-                <div class="nav-logo">
-                    <a href="index.html">
-                        <img src="assets/logo-white.svg">
-                    </a>
-                </div>
+        <!-- Navbar -->
+        <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="/">
+                    <img src="assets/lvgd-white-logo.svg" alt="LiveGuard" class="logo-img" />
+                </a>
+                <button class="burger" aria-label="Toggle menu">
+                    <img class="show" src="assets/menu_close.svg" alt="Menu">
+                    <img src="assets/menu_open.svg" alt="Menu">
+                </button>
             </div>
-            <div class="nav-content-right">
-                <select name="language" id="languageSwitcher"></select>
-                <ul id="nav-links">
-                    <!-- <li><select name="language" id="languageSwitcher"></select></li> -->
-                    <li><a href="mailto:contact@liveguard.ca"><img src="assets/gmail.svg"></a></li>
-                    <li><a href="https://www.linkedin.com/company/liveguard/" target="_blank"><img src="assets/linkedin.svg"></a></li>
-                    <li><a href="https://www.instagram.com/liveguard.ca/" target="_blank"><img src="assets/instagram.svg"></a></li>
-                    <li>
-                        <div id="contact-button-wrapper">
-                            <div class="main-button" id="contact-button">
-                                <a href="join.html">
-                                    <h4 data-i18n="tryButton"><span class="main-button-img-wrapper"></span></h4>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <section class="section-dark" id="section-download-wrapper" style="height: 100vh">
-            <div class="section-wrapper" id="section-download">
-                <h1 data-i18n="betaPage.title"></h1>
-                <h3 style="text-align: center;" data-i18n="betaPage.paragraph"></h3>
-                <div id="section-download-sub">
-                    <!-- <form action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="67aa859d-39aa-44af-80b9-76b26cacc4d1">
-                        <input type="email" id="email" name="email" placeholder="Email Address" required>
-                        <input type="text" id="username" name="username" placeholder="Username" required>
-                        <select id="role" name="role" required>
-                            <option value="" disabled selected>What best describes you?</option>
-                            <option value="Full-time Content Creator">Full-time Content Creator</option>
-                            <option value="Part-time Content Creator">Part-time Content Creator</option>
-                            <option value="Influencer">Influencer</option>
-                            <option value="Podcaster">Podcaster</option>
-                            <option value="Educator">Educator</option>
-                            <option value="Content Consumer">Content Consumer</option>
-                            <option value="Other">Other</option>
-                        </select>
-                        <select id="frequency" name="frequency" required>
-                            <option value="" disabled selected>How often do you create content?</option>
-                            <option value="Daily">Daily</option>
-                            <option value="Weekly">Weekly</option>
-                            <option value="Monthly">Monthly</option>
-                            <option value="Rarely">Rarely</option>
-                            <option value="Never">Never</option>
-                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-                        <div class="h-captcha" data-captcha="true"></div>
-                        <button class="main-button" id="section-download-button" type="submit">
-                            <h4>Join</h4>
-                        </button>
-                    </form> -->
+            <nav>
+            <ul class="nav-links">
+                <li class="nav-dropdown">
+                    <button data-i18n="nav.featuresBtn" class="nav-toggle">Features ▾</button>
+                    <ul class="nav-menu">
+                        <li><a data-i18n="nav.featuresMenu.aiOption" href="#">How it works</a></li>
+                        <li><a data-i18n="nav.featuresMenu.customizeOption" href="#">Customizability</a></li>
+                        <li><a data-i18n="nav.featuresMenu.missionOption" href="#">Made for you</a></li>
+                    </ul>
+                </li>
+                <li><a data-i18n="nav.aboutBtn" href="#">About</a></li>
+                <li class="lang-dropdown">
+                    <button class="lang-toggle">
+                        <img src="assets/globe.svg" alt="Language" class="lang-icon" />
+                    </button>
+                    <ul class="lang-menu" id="languageSwitcher">
+                        <!-- Gets automatically populated by i18n.js -->
+                        <!-- <li><a href="#" data-lang="en">EN</a></li> -->
+                        <!-- <li><a href="#" data-lang="fr">FR</a></li> -->
+                    </ul>
+                </li>
+                <li><a data-i18n="nav.tryBtn" href="join" class="button">Join the Waitlist!</a></li>
+            </ul>
+            </nav>
+        </div>
+        </header>
+
+        <!-- Waitlist Form -->
+        <section class="join">
+            <h1 data-i18n="joinPage.formSection.title">We are not quite ready yet</h1>
+            <h3 style="text-align: center;" data-i18n="joinPage.formSection.description">Paragraph here</h3>
+                <div id="waitlist-form">
                     <script async src="https://eocampaign1.com/form/88ca21ac-2127-11ef-b9c1-9908c9f76849.js" data-form="88ca21ac-2127-11ef-b9c1-9908c9f76849"></script>
                 </div>
-                <div id="section-download-outro">
-                    <h4 data-i18n="betaPage.outro"></h4>
-                    <ul id="test-links" class="download-links">
-                        <li><a href="mailto:contact@liveguard.ca"><img src="assets/gmail.svg"></a></li>
-                        <li><a href="https://www.linkedin.com/company/liveguard/" target="_blank"><img src="assets/linkedin.svg"></a></li>
-                        <li><a href="https://www.instagram.com/liveguard.ca/" target="_blank"><img src="assets/instagram.svg"></a></li>
+                <div class="contact-details">
+                    <h4 data-i18n="joinPage.formSection.followUs">Follow us on social media</h4>
+                    <ul class="social-media-links">
+                        <li><a href="mailto:contact@liveguard.ca"><img src="assets/gmail-black.svg"></a></li>
+                        <li><a href="https://www.linkedin.com/company/liveguard/" target="_blank"><img src="assets/linkedin-black.svg"></a></li>
+                        <li><a href="https://www.instagram.com/liveguard.ca/" target="_blank"><img src="assets/instagram-black.svg"></a></li>
                     </ul>
                 </div>
-            </div>
         </section>
-        <section class="section-dark" id="section-test-wrapper">
-            <div class="section-wrapper" id="section-test">
-                <span class="divider"></span>
-                <div class="footer">
-                    <h2>LiveGuard</h2>
-                    <h4>Montreal, Canada</h4>
-                    <ul id="test-links">
-                        <li><a href="mailto:contact@liveguard.ca"><img src="assets/gmail.svg"></a></li>
-                        <li><a href="https://www.linkedin.com/company/liveguard/" target="_blank"><img src="assets/linkedin.svg"></a></li>
-                        <li><a href="https://www.instagram.com/liveguard.ca/" target="_blank"><img src="assets/instagram.svg"></a></li>
-                    </ul>
+        
+        <!-- Footer -->
+        <footer>
+            <div class="footer-section">
+                <div class="logo">LiveGuard</div>
+                <div>Montreal, Canada</div>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="footer.aboutSection.title">About</h3>
+                <a data-i18n="footer.aboutSection.link1" href="mission">Our Mission</a>
+                <!-- TODO: To add eventually when the design is completed -->
+                <!-- <a data-i18n="footer.aboutSection.link2" href="#">Team</a> -->
+                <a data-i18n="footer.aboutSection.link3" href="careers">Careers</a>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="footer.contactSection.title">Reach us here:</h3>
+                <div class="footer-icons">
+                    <a href="mailto:contact@liveguard.ca" target="_blank" rel="noopener"><img src="assets/gmail.svg" alt="Email" width="20" /></a>
+                    <a href="https://www.linkedin.com/company/liveguard" target="_blank" rel="noopener"><img src="assets/linkedin.svg" alt="LinkedIn" width="20" /></a>
+                    <a href="https://www.instagram.com/liveguard.ca/" target="_blank" rel="noopener"><img src="assets/instagram.svg" alt="Instagram" width="20" /></a>
                 </div>
             </div>
-        </section>
+            <div class="footer-section">
+                <h3 data-i18n="footer.policiesSection.title">Policies</h3>
+                <a data-i18n="footer.policiesSection.link1" href="privacy">Privacy</a>
+                <a data-i18n="footer.policiesSection.link2" href="terms">Terms</a>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="footer.helpSection.title">Help</h3>
+                <a data-i18n="footer.helpSection.link1" href="documentation">Documentation</a>
+                <a data-i18n="footer.helpSection.link2" href="support">Support</a>
+            </div>
+        </footer>
     </body>
 </html>
