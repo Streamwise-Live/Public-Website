@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="keywords" content="livestream, live, content, creator, ban, demonetization, AI, saas, software, cloud, editing, editor, tool, platform, video, youtube, twitch, kick, tiktok, obs">
+        <meta name="robots" content="index, join, about, how-it-works, features, customize">
+
+        <meta name="title" content="LiveGuard">
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.liveguard.ca/how-it-works" />
+        <meta property="og:title" content="LiveGuard" />
+        <meta property="og:description" content="Stay focused on your content while our AI moderates in real time, keeping your stream safe, compliant, and free from strikes, bans, and demonetization." />
+        <meta property="og:image" content="https://www.liveguard.ca/assets/thumbnail.png" />
+        
+        <!-- Title -->
+        <title>LiveGuard</title>
+        <link rel="icon" type="image/x-icon" href="assets/logo.svg">
+
+        <!-- Navbar script -->
+        <script src="nav.js"></script>
+
+        <!-- Style Sheets -->
+        <link rel="stylesheet" href="style-main.css" />
+        <link rel="stylesheet" href="style-nav.css" />
+        <link rel="stylesheet" href="style-how-it-works.css" />
+    
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0E8SMDYMNX"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-0E8SMDYMNX');
+        </script>
+
+        <!-- Language -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
+        <script src="i18n.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@1.3.2/i18nextHttpBackend.min.js"></script>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="/">
+                    <img src="assets/lvgd-white-logo.svg" alt="LiveGuard" class="logo-img" />
+                </a>
+                <button class="burger" aria-label="Toggle menu">
+                    <img class="show" src="assets/menu_close.svg" alt="Menu">
+                    <img src="assets/menu_open.svg" alt="Menu">
+                </button>
+            </div>
+
+            <nav>
+            <ul class="nav-links">
+                <li class="nav-dropdown">
+                    <button data-i18n="nav.featuresBtn" class="nav-toggle">Features ▾</button>
+                    <ul class="nav-menu">
+                        <li><a data-i18n="nav.featuresMenu.aiOption" href="how-it-works">How it works</a></li>
+                        <li><a data-i18n="nav.featuresMenu.customizeOption" href="customize">Customizability</a></li>
+                        <li><a data-i18n="nav.featuresMenu.missionOption" href="mission">Made for you</a></li>
+                    </ul>
+                </li>
+                <li><a data-i18n="nav.aboutBtn" href="#">About</a></li>
+                <li class="lang-dropdown">
+                    <button class="lang-toggle">
+                        <img src="assets/globe.svg" alt="Language" class="lang-icon" />
+                    </button>
+                    <ul class="lang-menu" id="languageSwitcher">
+                        <!-- Gets automatically populated by i18n.js -->
+                        <!-- <li><a href="#" data-lang="en">EN</a></li> -->
+                        <!-- <li><a href="#" data-lang="fr">FR</a></li> -->
+                    </ul>
+                </li>
+                <li><a data-i18n="nav.tryBtn" href="join" class="button">Join the Waitlist!</a></li>
+            </ul>
+            </nav>
+        </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <h1>Transparency is so important for us</h1>
+                    <p>We're bringing you behind the scenes to show you how LiveGuard works!</p>
+                </div>
+                <div class="hero-right">
+                    <img class="character" src="assets/liveguard_xray.png" alt="X-ray">
+                </div>
+            </div>
+        </section>
+
+        <!-- Pipeline Section -->
+        <section class="pipeline">
+            <div class="pipeline-container">
+                <img src="assets/pipeline.png" alt="LiveGuard pipeline">
+                <div class="pipeline-description">
+                    <p>
+                    LiveGuard uses a real-time multimodal AI system on the cloud that processes both video and audio streams simultaneously. Acting as a smart middleman between your recording tool and the livestreaming platform, where we intercept and edit your stream before it ever reaches the platform, ensuring your can produce the best content.
+                    </p>
+                    <a href="join" class="dark-button">Try it Here!</a>
+                </div>
+
+                <div class="pipeline-features">
+
+                    <div class="pipeline-feature-header">
+                        <h3>What our system detects and protects you from in real-time:</h3>
+                    </div>
+
+                    <div class="feature-card">
+                        <img src="assets/ear.svg" alt="Audio Detection" class="feature-icon">
+                        <ul>
+                            <li>Swearing & toxicity</li>
+                            <li>Copyrighted music</li>
+                            <li>Private information leaks</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <img src="assets/eye.svg" alt="Video Moderation" class="feature-icon">
+                        <ul>
+                            <li>Nudity & suggestive content</li>
+                            <li>Violence & drugs</li>
+                            <li>Copyrighted videos/images</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <img src="assets/custom.svg" alt="Custom Detection" class="feature-icon">
+                        <ul>
+                            <li>Custom words/sentences</li>
+                            <li>Custom person</li>
+                            <li>Custom object</li>
+                            <li>Custom logo/brand</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Audio Detection Section -->
+        <section class="audio-detection-section">
+        <div class="detection-card">
+            <div class="detection-info">
+                <img src="assets/round_headphones.png" alt="Round guy with headphones" class="detection-character">
+                <h2>Audio Detection</h2>
+                <p>
+                    Our audio engine uses cutting-edge real-time speech recognition and acoustic analysis to detect harmful or unwanted content as it happens. From profanity and copyrighted content to personal details or slurs, our system catches it before it reaches the streaming platform. Whether for protection or creative control, with customizable triggers, you can create interactive moments or automatically respond to specific words and phrases.
+                </p>
+            </div>
+            <div class="detection-demo">
+                <div class="demo-box">Demo of audio detection</div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Video Detection Section -->
+        <section class="video-detection-section">
+        <div class="detection-card">
+            <div class="detection-info">
+                <img src="assets/round_handcam.png" alt="Round guy with a handcam" class="detection-character">
+                <h2>Video Detection</h2>
+                <p>
+                    Our video engine leverages real-time AI vision models to detect visual violations such as nudity, violence, logos, and copyrighted content before they ever appear on your livestream. This ensures your content stays compliant with platform guidelines and free from strikes or takedowns. With support for custom detection, you can also upload reference images to monitor for specific people, objects, or branding.
+                </p>
+            </div>
+            <div class="detection-demo">
+                <div class="demo-box">Demo of video detection</div>
+            </div>
+        </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer>
+            <div class="footer-section">
+                <div class="logo">LiveGuard</div>
+                <div>Montreal, Canada</div>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="footer.aboutSection.title">About</h3>
+                <a data-i18n="footer.aboutSection.link1" href="mission">Our Mission</a>
+                <!-- TODO: To add eventually when the design is completed -->
+                <!-- <a data-i18n="footer.aboutSection.link2" href="#">Team</a> -->
+                <a data-i18n="footer.aboutSection.link3" href="careers">Careers</a>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="footer.contactSection.title">Reach us here:</h3>
+                <div class="footer-icons">
+                    <a href="mailto:contact@liveguard.ca" target="_blank" rel="noopener"><img src="assets/gmail.svg" alt="Email" width="20" /></a>
+                    <a href="https://www.linkedin.com/company/liveguard" target="_blank" rel="noopener"><img src="assets/linkedin.svg" alt="LinkedIn" width="20" /></a>
+                    <a href="https://www.instagram.com/liveguard.ca/" target="_blank" rel="noopener"><img src="assets/instagram.svg" alt="Instagram" width="20" /></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="footer.policiesSection.title">Policies</h3>
+                <a data-i18n="footer.policiesSection.link1" href="privacy">Privacy</a>
+                <a data-i18n="footer.policiesSection.link2" href="terms">Terms</a>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="footer.helpSection.title">Help</h3>
+                <a data-i18n="footer.helpSection.link1" href="documentation">Documentation</a>
+                <a data-i18n="footer.helpSection.link2" href="support">Support</a>
+            </div>
+        </footer>
+    </body>
+</html>
