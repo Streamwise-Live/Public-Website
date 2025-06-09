@@ -95,6 +95,41 @@ $(function () {
                                 description: "Join our waitlist to get early access to our latest features for FREE and help us innovate a life changing service for all content creators out there.",
                                 followUs: "Follow us on social media"
                             }
+                        },
+                        howItWorksPage: {
+                            sectionHero: {
+                                title: "Transparency is so important for us",
+                                description: "We're bringing you behind the scenes to show you how LiveGuard works!"
+                            },
+                            pipelineSection: {
+                                description: "LiveGuard uses a real-time multimodal AI system on the cloud that processes both video and audio streams simultaneously. Acting as a smart middleman between your recording tool and the livestreaming platform, where we intercept and edit your stream before it ever reaches the platform, ensuring your can produce the best content.",
+                                join: "Try it Here!",
+                                featuresHeader: "What our system detects and protects you from in real-time:",
+                                audioFeatures: {
+                                    feature1: "Swearing & toxicity",
+                                    feature2: "Copyrighted music",
+                                    feature3: "Private information leaks"
+                                },
+                                videoFeatures: {
+                                    feature1: "Nudity & suggestive content",
+                                    feature2: "Violence & drugs",
+                                    feature3: "Copyrighted videos/images"
+                                },
+                                customFeatures: {
+                                    feature1: "Custom words/sentences",
+                                    feature2: "Custom person",
+                                    feature3: "Custom object",
+                                    feature4: "Custom logo/brand"
+                                }
+                            },
+                            audioDetectionSection: {
+                                title: "Audio Detection",
+                                description: "Our audio engine uses cutting-edge real-time speech recognition and acoustic analysis to detect harmful or unwanted content as it happens. From profanity and copyrighted content to personal details or slurs, our system catches it before it reaches the streaming platform. Whether for protection or creative control, with customizable triggers, you can create interactive moments or automatically respond to specific words and phrases."
+                            },
+                            videoDetectionSection: {
+                                title: "Video Detection",
+                                description: "Our video engine leverages real-time AI vision models to detect visual violations such as nudity, violence, logos, and copyrighted content before they ever appear on your livestream. This ensures your content stays compliant with platform guidelines and free from strikes or takedowns. With support for custom detection, you can also upload reference images to monitor for specific people, objects, or branding."
+                            }
                         }
                     }
                 },
@@ -168,6 +203,41 @@ $(function () {
                                 title: "Hé! Tu es en avance!",
                                 description: "Rejoignez note liste d'attente pour accéder gratuitement à nos dernières fonctionnalités en avant-première et aidez-nous à innover pour créer un service qui va changer le monde pour tous les créateurs de contenu.",
                                 followUs: "Suivez-nous sur les réseaux sociaux pour ne manquer aucune mise à jour!"
+                            }
+                        },
+                        howItWorksPage: {
+                            sectionHero: {
+                                title: "La transparence est primordiale pour nous",
+                                description: "Nous vous emmenons dans les coulisses pour vous montrer comment fonctionne LiveGuard !"
+                            },
+                            pipelineSection: {
+                                description: "LiveGuard utilise un système d'IA multimodale en temps réel dans le cloud, qui traite simultanément les flux vidéo et audio. Agissant comme un intermédiaire intelligent entre votre outil d'enregistrement et la plateforme de diffusion en direct, nous interceptons et modifions votre flux avant même qu'il n'atteigne la plateforme, vous permettant ainsi de produire le meilleur contenu possible.",
+                                join: "Essayez-le ici !",
+                                featuresHeader: "Ce que notre système détecte et vous protège en temps réel :",
+                                audioFeatures: {
+                                    feature1: "Grossièretés et toxicité",
+                                    feature2: "Musique protégée par des droits d'auteur",
+                                    feature3: "Fuites d'informations personnelles"
+                                },
+                                videoFeatures: {
+                                    feature1: "Nudité et contenu suggestif",
+                                    feature2: "Violence et drogues",
+                                    feature3: "Vidéos/images protégées par des droits d'auteur"
+                                },
+                                customFeatures: {
+                                    feature1: "Mots/phrases personnalisés",
+                                    feature2: "Personne personnalisée",
+                                    feature3: "Objet personnalisé",
+                                    feature4: "Logo/marque personnalisé"
+                                }
+                            },
+                            audioDetectionSection: {
+                                title: "Détection audio",
+                                description: "Notre moteur audio utilise une reconnaissance vocale en temps réel de pointe et une analyse acoustique pour détecter le contenu nuisible ou indésirable dès qu'il se produit. Que ce soit des grossièretés, du contenu protégé ou des informations personnelles, notre système l'intercepte avant qu'il n'atteigne la plateforme de diffusion. Pour la protection ou le contrôle créatif, avec des déclencheurs personnalisables, vous pouvez créer des moments interactifs ou réagir automatiquement à des mots ou phrases spécifiques."
+                            },
+                            videoDetectionSection: {
+                                title: "Détection vidéo",
+                                description: "Notre moteur vidéo s'appuie sur des modèles d'IA visuelle en temps réel pour détecter les violations visuelles telles que la nudité, la violence, les logos et le contenu protégé avant qu'elles n'apparaissent sur votre diffusion. Cela garantit que votre contenu respecte les règles des plateformes et évite les avertissements ou suppressions. Avec la détection personnalisée, vous pouvez aussi importer des images de référence pour surveiller des personnes, objets ou marques spécifiques."
                             }
                         }
                     }
