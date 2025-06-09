@@ -1,174 +1,184 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
-        <meta name="title" content="LiveGuard">
-        <meta name="description" content="The easiest way of using AI to put the fun back into content creation while protecting your work from sanctions and demonetizations on any platform">
-        <meta name="keywords" content="livestream, live, content, creator, ban, demonetization, AI, editing, editor, tool, platform, video, youtube, twitch, kick, tiktok, obs">
-        <meta name="robots" content="index, follow">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="language" content="English">
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.liveguard.ca/" />
-        <meta property="og:title" content="LiveGuard - Join" />
-        <meta property="og:description" content="The easiest way of using AI to put the fun back into content creation while protecting your work from sanctions and demonetizations on any platform" />
-        <meta property="og:image" content="https://www.liveguard.ca/assets/thumbnail.png" />
-        
-        <title>LiveGuard - Real-Time Editing, Real-Time Results</title>
-        <link rel="stylesheet" href="style-main.css">
-        <link rel="stylesheet" href="style-nav.css">
-        <link rel="stylesheet" href="style-index.css">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="livestream, live, content, creator, ban, demonetization, AI, saas, software, cloud, editing, editor, tool, platform, video, youtube, twitch, kick, tiktok, obs">
+    <meta name="robots" content="index, join, about, how-it-works, features, customize">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.liveguard.ca/" />
+    <meta property="og:title" content="LiveGuard" />
+    <meta property="og:description" content="Stay focused on your content while our AI moderates in real time, keeping your stream safe, compliant, and free from strikes, bans, and demonetization." />
+    <meta property="og:image" content="https://www.liveguard.ca/assets/thumbnail.png" />
 
-        <link rel="stylesheet" href="m-style-index.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="assets/logo.svg">
+    <!-- Title -->
+    <title>LiveGuard</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.svg">
 
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0E8SMDYMNX"></script>
-        <script>
+    <!-- Navbar script -->
+    <script src="nav.js"></script>
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="style-main.css" />
+    <link rel="stylesheet" href="style-nav.css" />
+    <link rel="stylesheet" href="style-index.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0E8SMDYMNX"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
         gtag('config', 'G-0E8SMDYMNX');
-        </script>
+    </script>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Language -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="i18n.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@1.3.2/i18nextHttpBackend.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+    <div class="navbar">
+        <div class="logo">
+            <a href="/">
+                <img src="assets/lvgd-white-logo.svg" alt="LiveGuard" class="logo-img" />
+            </a>
+            <button class="burger" aria-label="Toggle menu">
+                <img class="show" src="assets/menu_close.svg" alt="Menu">
+                <img src="assets/menu_open.svg" alt="Menu">
+            </button>
+        </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
-        <script src="i18n.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@1.3.2/i18nextHttpBackend.min.js"></script>
-    </head>
-    <body>
         <nav>
-            <div class="nav-content-left">
-                <div class="nav-logo">
-                    <a href="index.html">
-                        <img src="assets/logo-white.svg">
-                    </a>
-                </div>
-            </div>
-            <div class="nav-content-right">
-                <select name="language" id="languageSwitcher"></select>
-                <ul id="nav-links">
-                    <!-- <li><select name="language" id="languageSwitcher"></select></li> -->
-                    <li><a href="mailto:contact@liveguard.ca"><img src="assets/gmail.svg"></a></li>
-                    <li><a href="https://www.linkedin.com/company/liveguard/" target="_blank"><img src="assets/linkedin.svg"></a></li>
-                    <li><a href="https://www.instagram.com/liveguard.ca/" target="_blank"><img src="assets/instagram.svg"></a></li>
-                    <li>
-                        <div id="contact-button-wrapper">
-                            <div class="main-button" id="contact-button">
-                                <a href="join.html">
-                                    <h4 data-i18n="tryButton"><span class="main-button-img-wrapper"></span></h4>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
+        <ul class="nav-links">
+            <li class="nav-dropdown">
+                <button data-i18n="nav.featuresBtn" class="nav-toggle">Features ▾</button>
+                <ul class="nav-menu">
+                    <li><a data-i18n="nav.featuresMenu.aiOption" href="how-it-works">How it works</a></li>
+                    <li><a data-i18n="nav.featuresMenu.customizeOption" href="customize">Customizability</a></li>
+                    <!-- <li><a data-i18n="nav.featuresMenu.missionOption" href="mission">Made for you</a></li> -->
                 </ul>
-            </div>
+            </li>
+            <li><a data-i18n="nav.aboutBtn" href="about">About</a></li>
+            <li class="lang-dropdown">
+                <button class="lang-toggle">
+                    <img src="assets/globe.svg" alt="Language" class="lang-icon" />
+                </button>
+                <ul class="lang-menu" id="languageSwitcher">
+                    <!-- Gets automatically populated by i18n.js -->
+                    <!-- <li><a href="#" data-lang="en">EN</a></li> -->
+                    <!-- <li><a href="#" data-lang="fr">FR</a></li> -->
+                </ul>
+            </li>
+            <li><a data-i18n="nav.tryBtn" href="join" class="button">Join the Waitlist!</a></li>
+        </ul>
         </nav>
-        <section class="section-light" id="section-top-wrapper">
-            <div class="section-wrapper" id="section-top">
-                <div id="section-top-content">
-                    <h1 data-i18n="topContent.title"></h1>
-                    <h3 data-i18n="topContent.paragraph"></h3>
-                    <div class="main-button" id="section-top-button">
-                        <a href="join.html">
-                            <!-- <div class="button-img">
-                                <img src="assets/download-white.svg">
-                            </div> -->
-                            <h4 data-i18n="tryButton"><span class="main-button-img-wrapper"></span></h4>
-                        </a>
-                    </div>
-                </div>
-                <div id="section-top-img">
-                    <div class="section-top-img-decoration" style="top: 20%; left: 5%">
-                        <img style="width: 80px; height: 80px; rotate: 40deg;" src="assets/blue-star.svg">
-                    </div>
-                    <div class="section-top-img-decoration" style="bottom: 10%; right: 5%">
-                        <img style="width: 80px; height: 80px; rotate: 70deg;" src="assets/blue-cross.svg">
-                    </div>
-                    <img src="assets/computer-live.svg">
-                </div>
+    </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <!-- <h1>REAL-TIME EDITING, REAL-TIME RESULTS.</h1> -->
+            <h1 data-i18n="sectionHero.title">WE MODERATE YOUR LIVESTREAM SO YOU DON'T HAVE TO</h1>
+            <p data-i18n="sectionHero.description">
+                Stay focused on your content while our AI moderates in real time, keeping your stream safe, compliant, and free from strikes, bans, and demonetization.
+            </p>
+        </div>
+        <div class="hero-image">
+            <div class="hero-decoration" style="top: 20%; left: 5%">
+                <img style="width: 80px; height: 80px; rotate: 40deg;" src="assets/blue-star.svg">
             </div>
-        </section>
-        <section class="section-dark" id="section-desc-wrapper">
-            <div class="section-wrapper" id="section-desc">
-                <h1 data-i18n="sectionDesc.title"></h1>
-                <div id="section-desc-content-wrapper">
-                    <div id="section-desc-content">
-                        <h2 data-i18n="sectionDesc.protection.title"></h2>
-                        <h3 data-i18n="sectionDesc.protection.paragraph"></h3>
-                    </div>
-                    <div id="section-desc-content">
-                        <h2 data-i18n="sectionDesc.possibilities.title"></h2>
-                        <h3 data-i18n="sectionDesc.possibilities.paragraph"></h3>
-                    </div>
-                    <div id="section-desc-content">
-                        <h2 data-i18n="sectionDesc.integration.title"></h2>
-                        <h3 data-i18n="sectionDesc.integration.paragraph"></h3>
-                </div>
+            <div class="hero-decoration" style="bottom: 10%; right: 5%">
+                <img style="width: 80px; height: 80px; rotate: 70deg;" src="assets/blue-cross.svg">
             </div>
-            <div class="main-button" id="section-desc-button">
-                <a href="join.html">
-                    <!-- <div class="button-img">
-                        <img src="assets/download-white.svg">
-                    </div> -->
-                    <h4 data-i18n="tryButton"><span class="main-button-img-wrapper"></span></h4>
-                </a>
-            </div>
-        </section>
-        <section class="section-light" id="section-ml-wrapper">
-            <div class="section-wrapper" id="section-ml">
-                <div id="section-ml-img">
-                    <img src="assets/logo.svg">
-                </div>
-                <div id="section-ml-content">
-                    <h1 data-i18n="sectionML.title"></h1>
-                    <h3 data-i18n="sectionML.paragraph1"></h3>
-                    <h3 data-i18n="sectionML.paragraph2"></h3>
-                    <div class="main-button" id="section-top-button">
-                        <a href="join.html">
-                            <!-- <div class="button-img">
-                                <img src="assets/download-white.svg">
-                            </div> -->
-                            <h4 data-i18n="tryButton"><span class="main-button-img-wrapper"></span></h4>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section-dark" id="section-test-wrapper">
-            <div class="section-wrapper" id="section-test">
-                <div id="section-test-content">
-                    <h1 data-i18n="sectionBeta.title"></h1>
-                    <div>
-                        <h3 data-i18n="sectionBeta.paragraph"></h3>
-                        <ul id="test-links">
-                            <li><a href="mailto:contact@liveguard.ca"><img src="assets/gmail.svg"></a></li>
-                            <li><a href="https://www.linkedin.com/company/liveguard/" target="_blank"><img src="assets/linkedin.svg"></a></li>
-                            <li><a href="https://www.instagram.com/liveguard.ca/" target="_blank"><img src="assets/instagram.svg"></a></li>
-                        </ul>
-                        <button class="main-button" id="section-test-button">
-                            <a href="mailto:contact@liveguard.ca">
-                                <h4 data-i18n="contactButton">Contact Us</h4>
-                            </a>
-                        </button>
-                    </div>
-                </div>
-                <span class="divider"></span>
-                <div class="footer">
-                    <h2>LiveGuard</h2>
-                    <h4>Montreal, Canada</h4>
-                    <ul id="test-links" >
-                        <li><a href="mailto:contact@liveguard.ca"><img src="assets/gmail.svg"></a></li>
-                        <li><a href="https://www.linkedin.com/company/liveguard/" target="_blank"><img src="assets/linkedin.svg"></a></li>
-                        <li><a href="https://www.instagram.com/liveguard.ca/" target="_blank"><img src="assets/instagram.svg"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </body>
+            <img src="assets/computer-live.svg" alt="LiveGuard hero graphic" />
+        </div>
+    </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2 data-i18n="featuresSection.title">EFFORTLESS HIGH QUALITY.</h2>
+        <div class="feature-box">
+            <h3 data-i18n="featuresSection.feature1.title">Real-time protection</h3>
+            <p data-i18n="featuresSection.feature1.description">Customize our AI models to enhance your stream's audio and video by filtering out unwanted content in real-time. Take back control of your livestream and avoid platform penalties.</p>
+        </div>
+        <div class="feature-box">
+            <h3 data-i18n="featuresSection.feature2.title">Unlimited possibilities</h3>
+            <p data-i18n="featuresSection.feature2.description">Introduce unlimited profile configurations to your streams on the cloud with multistream, layout design, statistics analysis, and more. Let your creativity run wild!</p>
+        </div>
+        <div class="feature-box">
+            <h3 data-i18n="featuresSection.feature3.title">Seamless integration</h3>
+            <p data-i18n="featuresSection.feature3.description">Seamlessly integrates with your favorite streaming tools and platforms. Never compromise on your current workflow, without exceptions.</p>
+        </div>
+        <div class="action-button">
+            <a data-i18n="featuresSection.moreBtn" href="how-it-works" class="dark-button">See LiveGuard in action</a>
+        </div>
+    </section>
+
+    <!-- Creator First Section -->
+    <section class="creator">
+        <img src="assets/hands-holding-star.svg" alt="Hands holding star">
+        <h2 data-i18n="creatorSection.title">CREATOR FIRST</h2>
+        <p data-i18n="creatorSection.description1">Regardless of the streaming platform, we believe that you should not have to worry about unpredictable and unfair copyrighted content and ToS violations when livestreaming. Push your best content out there, and let us worry about the details.</p>
+        <p data-i18n="creatorSection.description2">We use AI to understand the context within your livestream to generate desired content and edits for your stream's video and audio.</p>
+        <p data-i18n="creatorSection.description3">We are committed to putting you at the forefront of LiveGuard's priorities</p>
+        <div class="action-button">
+            <a data-i18n="creatorSection.moreBtn" href="mission" class="dark-button">See how this benefits you</a>
+        </div>
+    </section>
+
+  <!-- Beta Testing Section -->
+  <section class="beta">
+    <h2 data-i18n="trySection.title">INTERESTED IN BETA TESTING?</h2>
+    <p data-i18n="trySection.description">We are always looking for content creators to help us build our platform and bring new ideas to the table!</p>
+    <div class="action-button">
+        <a data-i18n="trySection.moreBtn" href="mailto:contact@liveguard.ca" class="dark-button">Contact us!</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-section">
+      <div class="logo">LiveGuard</div>
+      <div>Montreal, Canada</div>
+    </div>
+    <div class="footer-section">
+      <h3 data-i18n="footer.aboutSection.title">About</h3>
+      <a data-i18n="footer.aboutSection.link1" href="mission">Our Mission</a>
+      <!-- TODO: To add eventually when the design is completed -->
+      <!-- <a data-i18n="footer.aboutSection.link2" href="#">Team</a> -->
+      <a data-i18n="footer.aboutSection.link3" href="careers">Careers</a>
+    </div>
+    <div class="footer-section">
+      <h3 data-i18n="footer.contactSection.title">Reach us here:</h3>
+      <div class="footer-icons">
+        <a href="mailto:contact@liveguard.ca" target="_blank" rel="noopener"><img src="assets/gmail.svg" alt="Email" width="20" /></a>
+        <a href="https://www.linkedin.com/company/liveguard" target="_blank" rel="noopener"><img src="assets/linkedin.svg" alt="LinkedIn" width="20" /></a>
+        <a href="https://www.instagram.com/liveguard.ca/" target="_blank" rel="noopener"><img src="assets/instagram.svg" alt="Instagram" width="20" /></a>
+      </div>
+    </div>
+    <div class="footer-section">
+      <h3 data-i18n="footer.policiesSection.title">Policies</h3>
+      <a data-i18n="footer.policiesSection.link1" href="privacy">Privacy</a>
+      <a data-i18n="footer.policiesSection.link2" href="terms">Terms</a>
+    </div>
+    <div class="footer-section">
+      <h3 data-i18n="footer.helpSection.title">Help</h3>
+      <a data-i18n="footer.helpSection.link1" href="documentation">Documentation</a>
+      <a data-i18n="footer.helpSection.link2" href="support">Support</a>
+    </div>
+  </footer>
+</body>
 </html>
