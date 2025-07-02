@@ -42,6 +42,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script>
     <script src="i18n.js"></script>
+    <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@1.3.2/i18nextHttpBackend.min.js"></script>
 </head>
 <body>
@@ -89,8 +90,7 @@
     <section class="hero">
     <div class="hero-content">
         <div class="hero-text">
-            <!-- <h1>REAL-TIME EDITING, REAL-TIME RESULTS.</h1> -->
-            <h1 data-i18n="sectionHero.title">WE MODERATE YOUR LIVESTREAM SO YOU DON'T HAVE TO</h1>
+            <h1><img src="assets/lvgd_black_logo.svg" alt="LiveGuard" class="black-logo"><span data-i18n="sectionHero.title">MODERATES YOUR LIVESTREAM SO YOU DON'T HAVE TO</span></h1>
             <p data-i18n="sectionHero.description">
                 Stay focused on your content while our AI moderates in real time, keeping your stream safe, compliant, and free from strikes, bans, and demonetization.
             </p>
@@ -107,24 +107,55 @@
     </div>
     </section>
 
-    <!-- Features Section -->
+    <!-- Real-time Protection Section -->
+    <section class="features blue">
+    <div class="features-content">
+        <div class="features-text">
+            <h1 data-i18n="featuresSection.feature1.title">Real-time protection</h1>
+            <p data-i18n="featuresSection.feature1.description">
+                Stay focused on your content while our AI moderates in real time, keeping your stream safe, compliant, and free from strikes, bans, and demonetization.
+            </p>
+            <div class="action-button">
+                <a data-i18n="featuresSection.moreBtn" href="how-it-works" class="dark-button">See it in action</a>
+            </div>
+        </div>
+        <div class="features-image realtime">
+            <img src="assets/twitch_browser.png" class="twitch-browser">
+        </div>
+    </div>
+    </section>
+
+    <!-- Unlimited Possibilities Section -->
     <section class="features">
-        <h2 data-i18n="featuresSection.title">EFFORTLESS HIGH QUALITY.</h2>
-        <div class="feature-box">
-            <h3 data-i18n="featuresSection.feature1.title">Real-time protection</h3>
-            <p data-i18n="featuresSection.feature1.description">Customize our AI models to enhance your stream's audio and video by filtering out unwanted content in real-time. Take back control of your livestream and avoid platform penalties.</p>
+    <div class="features-content">
+        <div class="features-image customize only-pc">
+            <img src="assets/app_browser.png" class="app-browser">
         </div>
-        <div class="feature-box">
-            <h3 data-i18n="featuresSection.feature2.title">Unlimited possibilities</h3>
-            <p data-i18n="featuresSection.feature2.description">Introduce unlimited profile configurations to your streams on the cloud with multistream, layout design, statistics analysis, and more. Let your creativity run wild!</p>
+        <div class="features-text">
+            <h1 data-i18n="featuresSection.feature2.title">Unlimited possibilities</h1>
+            <p data-i18n="featuresSection.feature2.description">
+                Think beyond basic protection filters. Our modular tools let you personalize your stream your way — with full transparency and flexibility.
+            </p>
         </div>
-        <div class="feature-box">
-            <h3 data-i18n="featuresSection.feature3.title">Seamless integration</h3>
-            <p data-i18n="featuresSection.feature3.description">Seamlessly integrates with your favorite streaming tools and platforms. Never compromise on your current workflow, without exceptions.</p>
+        <div class="features-image customize only-mobile">
+            <img src="assets/app_browser.png" class="app-browser">
         </div>
-        <div class="action-button">
-            <a data-i18n="featuresSection.moreBtn" href="how-it-works" class="dark-button">See it in action</a>
+    </div>
+    </section>
+
+    <!-- Seamless integration Section -->
+    <section class="features blue">
+    <div class="features-content">
+        <div class="features-text">
+            <h1 data-i18n="featuresSection.feature3.title">Seamless integration</h1>
+            <p data-i18n="featuresSection.feature3.description">
+                Seamlessly integrates with your favorite streaming tools, Twitch, YouTube, and more, without disrupting your workflow. Enjoy full compatibility, multistreaming, and stream analytics.
+            </p>
         </div>
+        <div class="features-image integration">
+            <img src="assets/obs_studio_app.png" class="obs-app">
+        </div>
+    </div>
     </section>
 
     <!-- Creator First Section -->

@@ -1,3 +1,11 @@
+.only-mobile {
+    display: none !important;
+}
+
+.only-pc {
+    display: flex !important;
+}
+
 /* Hero Section */
 .hero {
     background: var(--color-background-primary);
@@ -7,6 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: calc(88vh - 100px);
 }
 
 .hero-content {
@@ -23,6 +32,9 @@
 
 .hero-text {
     flex: 1 1 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-text h1 {
@@ -51,6 +63,11 @@
     animation-delay: 0.1s;
 }
 
+.black-logo {
+    width: 300px; 
+    transform: translateY(25px);
+}
+
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -74,6 +91,10 @@
     overflow: hidden;
 }
 
+.hero-decoration:nth-child(2) {
+    animation-delay: 1.2s;
+}
+
 @keyframes float-animation {
     0% {
         transform: translateY(0);
@@ -88,32 +109,112 @@
 
 /* Features Section */
 .features {
-    background-color: var(--color-background-secondary);
-    color: var(--color-text-secondary);
+    background-color: var(--color-background-primary);
+    color: var(--color-text-primary);
     padding: 3rem 1rem;
     text-align: center;
+    overflow: hidden;
 }
 
-.features h2 {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
+.features.blue {
+    background-color: var(--color-background-secondary);
+    color: var(--color-text-secondary);
 }
 
-.feature-box {
-    max-width: 800px;
-    margin: 1.5rem auto;
+.features-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    min-height: 500px;
+    position: relative;
+}
+
+.features-content p {
+    font-size: 1.2rem;
+}
+
+.features-text {
+    flex: 0 0 50%;
+    max-width: 600px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     text-align: left;
 }
 
-.feature-box h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: var(--color-text-secondary);
+.features-text h1 {
+    font-size: 40px;
 }
 
-.feature-box p {
-    font-size: 1rem;
-    color: var(--color-text-secondary);
+.features-image {
+    flex: 1;
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* padding-left: 1rem; */
+}
+
+.features-image.realtime {
+    height: 65vh;
+    margin-right: calc(-100vw + 100%);
+    justify-content: flex-start;
+    opacity: 0;
+    transform: translateX(200px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    will-change: transform, opacity;
+}
+
+.features-image.customize {
+    height: 65vh;
+    margin-left: calc(-100vw + 100%);
+    justify-content: flex-end;
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    will-change: transform, opacity;
+}
+
+.features-image.integration {
+    height: 65vh;
+    margin-right: calc(-100vw + 100%);
+    justify-content: flex-start;
+    opacity: 0;
+    transform: translateX(200px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    will-change: transform, opacity;
+}
+
+.features-image.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.twitch-browser {
+    height: 100%;
+    width: auto;
+    max-width: none;
+    object-fit: contain;
+    object-position: left center;
+}
+
+.app-browser {
+    height: 100%;
+    width: auto;
+    max-width: none;
+    object-fit: contain;
+    object-position: right center;
+}
+
+.obs-app {
+    height: 100%;
+    width: auto;
+    max-width: none;
+    object-fit: contain;
+    object-position: left center;
 }
 
 .action-button {
@@ -251,14 +352,51 @@
 }
 
 @media (max-width: 768px) {
-  .hero h1,
-  .features h2,
-  .creator h2,
-  .beta h2 {
-    font-size: 1.5rem;
-  }
+    .only-mobile {
+        display: flex !important;
+    }
 
-  .feature-box {
-    padding: 0 1rem;
-  }
+    .only-pc {
+        display: none !important;
+    }
+
+    .hero h1,
+    .features h2,
+    .creator h2,
+    .beta h2 {
+        font-size: 1.5rem;
+    }
+
+    .feature-box {
+        padding: 0 1rem;
+    }
+
+    .black-logo {
+        width: 160px; 
+        transform: translateY(13px);
+    }
+
+    .features-content {
+        flex-direction: column;
+    }
+
+    .features-image {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .twitch-browser {
+        width: 80vw;
+        height: auto;
+    }
+
+    .app-browser {
+        width: 80vw;
+        height: auto;
+    }
+
+    .obs-app {
+        width: 80vw;
+        height: auto;
+    }
 }
