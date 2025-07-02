@@ -48,7 +48,7 @@ $(function () {
                             },
                             feature2: {
                                 title: 'Unlimited possibilities',
-                                description: 'Think beyond basic filters. Our modular tools let you personalize your stream your way — with full transparency and flexibility.'
+                                description: 'Think beyond basic protection filters. Our modular tools let you personalize your stream your way — with full transparency and flexibility.'
                             },
                             feature3: {
                                 title: 'Seamless integration',
