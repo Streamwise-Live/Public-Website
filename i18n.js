@@ -37,7 +37,7 @@ $(function () {
                             tryBtn: 'Join the Waitlist!'
                         },
                         sectionHero: {
-                            title: 'WE MODERATE YOUR LIVESTREAM SO YOU DON\'T HAVE TO',
+                            title: 'MODERATES YOUR LIVESTREAM SO YOU DON\'T HAVE TO',
                             description: 'Stay focused on your content while our AI moderates in real time, keeping your stream safe, compliant, and free from strikes, bans, and demonetization.'
                         },
                         featuresSection: {
@@ -146,7 +146,7 @@ $(function () {
                             tryBtn: 'Rejoignez la liste d\'attente !'
                         },
                         sectionHero: {
-                            title: 'NOUS MODÉRONS VOTRE LIVESTREAM POUR VOUS',
+                            title: 'MODÈRE VOTRE LIVESTREAM POUR VOUS',
                             description: 'Restez concentré sur votre contenu pendant que notre IA modère en temps réel, gardant votre diffusion sûre, conforme et protégée contre les avertissements, bannissements et démonétisations.'
                         },
                         featuresSection: {
