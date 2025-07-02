@@ -45,6 +45,21 @@
     flex: 1 1 500px;
     position: relative;
     justify-content: center;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.1s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .hero-image img {
@@ -127,6 +142,93 @@
     max-width: 800px;
     margin: 0 auto 1rem;
     font-size: 1rem;
+}
+
+.orbit-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 40px auto;
+}
+
+.orbit-center-image {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.orbit-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    transform-origin: center center;
+}
+
+.orbit-wrapper.youtube {
+    animation: orbit 8s linear infinite;
+    animation-delay: 0s;
+}
+
+.orbit-wrapper.twitch {
+    animation: orbit 8s linear infinite;
+    animation-delay: -2.67s;
+}
+
+.orbit-wrapper.kick {
+    animation: orbit 8s linear infinite;
+    animation-delay: -5.33s;
+}
+
+.orbit-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transform: translateX(140px) translateY(-20px);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: counter-rotate 8s linear infinite;
+}
+
+.orbit-wrapper.youtube .orbit-icon {
+  animation-delay: 0s;
+}
+
+.orbit-wrapper.twitch .orbit-icon {
+  animation-delay: -2.67s;
+}
+
+.orbit-wrapper.kick .orbit-icon {
+  animation-delay: -5.33s;
+}
+
+@keyframes orbit {
+  0% { 
+    transform: rotate(0deg); 
+  }
+  100% { 
+    transform: rotate(360deg); 
+  }
+}
+
+@keyframes counter-rotate {
+  0% { 
+    transform: translateX(140px) translateY(-20px) rotate(0deg); 
+  }
+  100% { 
+    transform: translateX(140px) translateY(-20px) rotate(-360deg); 
+  }
+}
+
+.orbit-satellite-image {
+    width: 60px;
 }
 
 /* Beta Testing Section */

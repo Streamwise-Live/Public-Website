@@ -54,7 +54,7 @@ $(function () {
                                 title: 'Seamless integration',
                                 description: 'Seamlessly integrates with your favorite streaming tools, Twitch, YouTube, and more, without disrupting your workflow. Enjoy full compatibility, multistreaming, and stream analytics.'
                             },
-                            moreBtn: 'See LiveGuard in action'
+                            moreBtn: 'See it in action'
                         },
                         creatorSection: {
                             title: 'CREATOR FIRST',
