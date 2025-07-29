@@ -58,9 +58,8 @@ $(function () {
                         },
                         creatorSection: {
                             title: 'CREATOR FIRST',
-                            description1: 'Regardless of the streaming platform, we believe that you should not have to worry about unpredictable and unfair copyrighted content and ToS violations when livestreaming. Push your best content out there, and let us worry about the details.',
-                            description2: 'We use AI to understand the context within your livestream to generate desired content and edits for your stream\'s video and audio.',
-                            description3: 'We are committed to putting you at the forefront of LiveGuard\'s priorities',
+                            description1: 'We believe livestreaming should be fun, creative, and truly yours. No matter the platform, you deserve the freedom to customize your stream and share your best content-without the fear of sudden copyright strikes or unfair ToS violations.',
+                            description2: 'We are committed to putting you at the forefront of LiveGuard\'s priorities.',
                             moreBtn: 'See how this benefits you'
                         },
                         trySection: {
@@ -167,9 +166,8 @@ $(function () {
                         },
                         creatorSection: {
                             title: 'LES CRÉATEURS AVANT TOUT',
-                            description1: 'Quelle que soit la plateforme de streaming, vous ne devriez pas avoir à vous soucier des violations de droits d\'auteur ou des conditions d\'utilisation imprévisibles et injustes. Publiez votre meilleur contenu et laissez-nous gérer les détails.',
-                            description2: 'Nous utilisons l\'IA pour comprendre le contexte de votre livestream afin de générer le contenu et les modifications souhaités pour la vidéo et l\'audio de votre stream.',
-                            description3: 'Nous nous engageons à faire de vous la priorité absolue de LiveGuard.',
+                            description1: 'Nous croyons que le livestreaming doit être amusant, créatif et véritablement à votre image. Peu importe la plateforme, vous méritez la liberté de personnaliser votre stream et de partager votre meilleur contenu — sans craindre les sanctions soudaines pour droits d\'auteur ou les violations injustes des conditions d\'utilisation.',
+                            description2: 'Nous nous engageons à faire de vous la priorité absolue de LiveGuard.',
                             moreBtn: 'Découvrez ce que cela vous apporte'
                         },
                         trySection: {
