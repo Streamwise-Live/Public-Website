@@ -38,7 +38,7 @@ $(function () {
                         },
                         sectionHero: {
                             title: 'MODERATES YOUR LIVESTREAM SO YOU DON\'T HAVE TO',
-                            description: 'Stay focused on your content while our AI moderates in real time, keeping your stream safe, compliant, and free from strikes, bans, and demonetization.'
+                            description: 'Stay focused on your content while our real-time AI editor keeps your stream safe, compliant, and free from bans and demonetization, all with the power to customize your experience.'
                         },
                         featuresSection: {
                             title: 'EFFORTLESS HIGH QUALITY.',
@@ -48,7 +48,7 @@ $(function () {
                             },
                             feature2: {
                                 title: 'Unlimited possibilities',
-                                description: 'Think beyond basic protection filters. Our modular tools let you personalize your stream your way — with full transparency and flexibility.'
+                                description: 'Think beyond basic protection filters. Our modular tools let you personalize your stream your way, with full transparency and flexibility.'
                             },
                             feature3: {
                                 title: 'Seamless integration',

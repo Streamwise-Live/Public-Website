@@ -64,8 +64,8 @@
             <li class="nav-dropdown">
                 <button data-i18n="nav.featuresBtn" class="nav-toggle">Features ▾</button>
                 <ul class="nav-menu">
-                    <li><a data-i18n="nav.featuresMenu.aiOption" href="how-it-works">How it works</a></li>
-                    <li><a data-i18n="nav.featuresMenu.customizeOption" href="customize">Customizability</a></li>
+                    <!-- <li><a data-i18n="nav.featuresMenu.aiOption" href="how-it-works">How it works</a></li>
+                    <li><a data-i18n="nav.featuresMenu.customizeOption" href="customize">Customizability</a></li> -->
                     <!-- <li><a data-i18n="nav.featuresMenu.missionOption" href="mission">Made for you</a></li> -->
                 </ul>
             </li>
@@ -92,7 +92,7 @@
         <div class="hero-text">
             <h1><img src="assets/lvgd_black_logo.svg" alt="LiveGuard" class="black-logo"><span data-i18n="sectionHero.title">MODERATES YOUR LIVESTREAM SO YOU DON'T HAVE TO</span></h1>
             <p data-i18n="sectionHero.description">
-                Stay focused on your content while our AI moderates in real time, keeping your stream safe, compliant, and free from strikes, bans, and demonetization.
+                Stay focused on your content while our real-time AI editor keeps your stream safe, compliant, and free from bans and demonetization, all with the power to customize your experience.
             </p>
         </div>
         <div class="hero-image">
@@ -102,7 +102,14 @@
             <div class="hero-decoration" style="bottom: 10%; right: 5%">
                 <img style="width: 80px; height: 80px; rotate: 70deg;" src="assets/blue-cross.svg">
             </div>
-            <img src="assets/computer-live.svg" alt="LiveGuard hero graphic" />
+            <div class="device-wrapper">
+                <img src="assets/computer-live.svg" alt="LiveGuard hero graphic" class="device-image" />
+                <img src="assets/live.svg" alt="LIVE" class="device-video-live" />
+                <video class="device-video" autoplay muted loop playsinline>
+                    <source src="assets/video.mp4" type="video/mp4" />
+                    <!-- Your browser does not support the video tag. -->
+                </video>
+            </div>
         </div>
     </div>
     </section>
