@@ -37,7 +37,8 @@ $(function () {
                             tryBtn: 'Join the Waitlist!'
                         },
                         sectionHero: {
-                            title: 'MODERATES YOUR LIVESTREAM SO YOU DON\'T HAVE TO',
+                            title: 'YOUR LIVESTREAM SO YOU DON\'T HAVE TO',
+                            keywords: ["MODERATES", "EDITS", "FILTERS", "ENHANCES"],
                             description: 'Stay focused on your content while our real-time AI editor keeps your stream safe, compliant, and free from bans and demonetization, all with the power to customize your experience.'
                         },
                         featuresSection: {
@@ -145,7 +146,8 @@ $(function () {
                             tryBtn: 'Rejoignez la liste d\'attente !'
                         },
                         sectionHero: {
-                            title: 'MODÈRE VOTRE LIVESTREAM POUR VOUS',
+                            title: 'VOTRE LIVESTREAM',
+                            keywords: ["MODÈRE", "ÉDITE", "FILTRE", "AMÉLIORE"],
                             description: 'Restez concentré sur votre contenu pendant que notre IA modère en temps réel, gardant votre diffusion sûre, conforme et protégée contre les avertissements, bannissements et démonétisations.'
                         },
                         featuresSection: {
@@ -262,10 +264,16 @@ $(function () {
             $('#languageSwitcher').on('click', 'a[data-lang]', function (e) {
                 const chosenLng = $(this).data('lang');
                 i18next.changeLanguage(chosenLng, () => {
+                    // Populate keywords global variable
+                    window.keywords = i18next.t('sectionHero.keywords', { returnObjects: true });
+                    
                     rerender();
                 });
                 $('#languageSwitcher').removeClass('show');
             });
+            
+            // Initiate keywords global variable
+            window.keywords = i18next.t('sectionHero.keywords', { returnObjects: true });
     
             rerender();
           });
