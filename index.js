@@ -1,3 +1,34 @@
+window.keywords = ["MODERATES", "EDITS", "FILTERS", "ENHANCES"];
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let typingSpeed = 100;
+let pauseBetweenWords = 2000;
+
+function typeEffect() {
+  const currentWord = keywords[wordIndex];
+  const typedSpan = document.querySelector(".typed-word");
+  
+  if (isDeleting) {
+    typedSpan.textContent = currentWord.substring(0, charIndex--);
+    if (charIndex < 0) {
+      isDeleting = false;
+      wordIndex = (wordIndex + 1) % keywords.length;
+      setTimeout(typeEffect, 200);
+    } else {
+      setTimeout(typeEffect, typingSpeed / 2);
+    }
+  } else {
+    typedSpan.textContent = currentWord.substring(0, charIndex++);
+    if (charIndex > currentWord.length) {
+      isDeleting = true;
+      setTimeout(typeEffect, pauseBetweenWords);
+    } else {
+      setTimeout(typeEffect, typingSpeed);
+    }
+  }
+}
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     const el = entry.target;
@@ -17,4 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.features-image').forEach(section => {
     observer.observe(section);
   });
+
+  typeEffect();
 });
