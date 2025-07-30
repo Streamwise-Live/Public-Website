@@ -49,5 +49,10 @@ body {
     text-decoration: none;
     border: none;
     border-radius: 8px;
-    display: inline-block;
+}
+
+.dark-button img {
+    margin-left: 0.5rem; 
+    width: 18px; 
+    height: 18px;
 }

@@ -34,7 +34,7 @@ $(function () {
                                 customizeOption: 'Customizability',
                                 missionOption: 'Made for you',
                             },
-                            tryBtn: 'Join the Waitlist!'
+                            tryBtn: 'Join our Discord'
                         },
                         sectionHero: {
                             title: 'YOUR LIVESTREAM SO YOU DON\'T HAVE TO',
@@ -66,7 +66,9 @@ $(function () {
                         trySection: {
                             title: 'INTERESTED IN BETA TESTING?',
                             description: 'We are always looking for content creators to help us build our platform and bring new ideas to the table!',
-                            moreBtn: 'Contact us!'
+                            moreBtn1: 'Discord',
+                            moreBtn2: 'Email',
+                            condition: "OR"
                         },
                         footer: {
                             aboutSection: {
@@ -143,7 +145,7 @@ $(function () {
                             customizeOption: 'Personnalisation',
                             missionOption: 'Conçu pour vous'
                             },
-                            tryBtn: 'Rejoignez la liste d\'attente !'
+                            tryBtn: 'Rejoignez notre Discord'
                         },
                         sectionHero: {
                             title: 'VOTRE LIVESTREAM',
@@ -173,9 +175,11 @@ $(function () {
                             moreBtn: 'Découvrez ce que cela vous apporte'
                         },
                         trySection: {
-                            title: 'INTÉRESSÉ(E) PAR LE PROGRAMME BÊTA ?',
+                            title: 'INTÉRESSÉ(E) PAR LE PROGRAMME BÊTA?',
                             description: 'Nous cherchons toujours des créateurs de contenu pour nous aider à construire notre plateforme et à proposer de nouvelles idées !',
-                            moreBtn: 'Contactez-nous !'
+                            moreBtn1: 'Discord',
+                            moreBtn2: 'Email',
+                            condition: "OU"
                         },
                         footer: {
                             aboutSection: {
