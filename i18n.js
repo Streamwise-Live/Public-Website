@@ -27,19 +27,17 @@ $(function () {
                 en: {
                     translation: {
                         nav: {
-                            featuresBtn: 'Features ▾',
-                            aboutBtn: 'About',
-                            featuresMenu: {
-                                aiOption: 'How it works',
-                                customizeOption: 'Customizability',
-                                missionOption: 'Made for you',
-                            },
+                            featuresBtn: 'Features',
+                            missionBtn: 'Mission',
+                            pricingBtn: 'Pricing',
+                            faqBtn: 'FAQ',
                             tryBtn: 'Join our Discord'
                         },
                         sectionHero: {
                             title: 'YOUR LIVESTREAM SO YOU DON\'T HAVE TO',
                             keywords: ["MODERATES", "EDITS", "FILTERS", "ENHANCES"],
-                            description: 'Stay focused on your content while our real-time AI editor keeps your stream safe, compliant, and free from bans and demonetization, all with the power to customize your experience.'
+                            description: 'Real-time AI audio/video moderation that blocks bans, prevents demonetization, and adapts to your style — so you can stream stress-free.',
+                            actionBtn: 'Book a demo'
                         },
                         featuresSection: {
                             title: 'EFFORTLESS HIGH QUALITY.',
@@ -59,9 +57,40 @@ $(function () {
                         },
                         creatorSection: {
                             title: 'CREATOR FIRST',
-                            description1: 'We believe livestreaming should be fun, creative, and truly yours. No matter the platform, you deserve the freedom to customize your stream and share your best content-without the fear of sudden copyright strikes or unfair ToS violations.',
-                            description2: 'We are committed to putting you at the forefront of LiveGuard\'s priorities.',
+                            description1: 'We believe livestreaming should be fun, creative, and safe for all content creators. No matter the platform, you deserve the freedom to own your stream and share your best content-without the fear of mistakes, sudden copyright strikes or unfair ToS violations.',
+                            description2: 'In a world where creators face constant pressure to produce more and better content, we\'re building a platform and community that offers the support and tools they need to thrive.',
                             moreBtn: 'See how this benefits you'
+                        },
+                        pricingSection: {
+                            title: 'Pricing',
+                            description: 'All prices in USD, per month.',
+                            plans: {
+                                free: {
+                                    name: 'Free',
+                                    price: '0',
+                                    feature: '10 hours included',
+                                    buyBtn: 'Book a demo'
+                                },
+                                starter: {
+                                    name: 'Starter',
+                                    price: '10',
+                                    feature: '30 hours included',
+                                    buyBtn: 'Coming soon'
+                                },
+                                intermediate: {
+                                    name: 'Intermediate',
+                                    price: '16',
+                                    feature: '55 hours included',
+                                    buyBtn: 'Coming soon'
+                                },
+                                pro: {
+                                    name: 'Pro',
+                                    price: '22',
+                                    feature: '80 hours included',
+                                    buyBtn: 'Coming soon'
+                                }
+                            },
+                            onDemandDescription: 'Need more streaming time? Add on-demand hours anytime.'
                         },
                         trySection: {
                             title: 'INTERESTED IN BETA TESTING?',
@@ -89,48 +118,6 @@ $(function () {
                                 title: 'Help',
                                 link1: 'Documentation',
                                 link2: 'Support'
-                            }
-                        },
-                        joinPage: {
-                            formSection: {
-                                title: "Hey, You're here early!",
-                                description: "Join our waitlist to get early access to our latest features for FREE and help us innovate a life changing service for all content creators out there.",
-                                followUs: "Follow us on social media"
-                            }
-                        },
-                        howItWorksPage: {
-                            sectionHero: {
-                                title: "Transparency is so important for us",
-                                description: "We're bringing you behind the scenes to show you how LiveGuard works!"
-                            },
-                            pipelineSection: {
-                                description: "LiveGuard uses a real-time multimodal AI system on the cloud that processes both video and audio streams simultaneously. Acting as a smart middleman between your recording tool and the livestreaming platform, where we intercept and edit your stream before it ever reaches the platform, ensuring your can produce the best content.",
-                                join: "Try it Here!",
-                                featuresHeader: "What our system detects and protects you from in real-time:",
-                                audioFeatures: {
-                                    feature1: "Swearing & toxicity",
-                                    feature2: "Copyrighted music",
-                                    feature3: "Private information leaks"
-                                },
-                                videoFeatures: {
-                                    feature1: "Nudity & suggestive content",
-                                    feature2: "Violence & drugs",
-                                    feature3: "Copyrighted videos/images"
-                                },
-                                customFeatures: {
-                                    feature1: "Custom words/sentences",
-                                    feature2: "Custom person",
-                                    feature3: "Custom object",
-                                    feature4: "Custom logo/brand"
-                                }
-                            },
-                            audioDetectionSection: {
-                                title: "Audio Detection",
-                                description: "Our audio engine uses cutting-edge real-time speech recognition and acoustic analysis to detect harmful or unwanted content as it happens. From profanity and copyrighted content to personal details or slurs, our system catches it before it reaches the streaming platform. Whether for protection or creative control, with customizable triggers, you can create interactive moments or automatically respond to specific words and phrases."
-                            },
-                            videoDetectionSection: {
-                                title: "Video Detection",
-                                description: "Our video engine leverages real-time AI vision models to detect visual violations such as nudity, violence, logos, and copyrighted content before they ever appear on your livestream. This ensures your content stays compliant with platform guidelines and free from strikes or takedowns. With support for custom detection, you can also upload reference images to monitor for specific people, objects, or branding."
                             }
                         }
                     }
