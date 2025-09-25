@@ -9,7 +9,7 @@
     <meta property="og:url" content="https://www.streamwise.gg/" />
     <meta property="og:title" content="Streamwise" />
     <meta property="og:description" content="Stay focused on your content while our AI moderates in real time, keeping your stream safe, compliant, and free from strikes, bans, and demonetization." />
-    <meta property="og:image" content="https://www.streamwise.gg/assets/thumbnail.png" />
+    <!-- <meta property="og:image" content="https://www.streamwise.gg/assets/thumbnail.png" /> -->
 
     <!-- Title -->
     <title>Streamwise</title>
@@ -264,8 +264,53 @@
 
     <!-- FAQ Section -->
     <section class="faq" id="faq">
-        <div class="faq-text">
-            <h1>FAQ</h1>
+        <div class="faq-content">
+            <div class="faq-text">
+                <h1>FAQ</h1>
+            </div>
+
+            <div class="faq-accordion" role="list">
+                <!-- Do you store my stream keys? -->
+                <details class="faq-item">
+                    <summary>
+                        <span class="q" data-i18n="faq.q1">Do you store my stream keys?</span>
+                        <span class="caret" aria-hidden="true"></span>
+                    </summary>
+                    <div class="a" data-i18n="faq.a1">
+                        Yes, but keys are locked away once saved; hence. you cannot view them afterwards. You can rotate or delete them at any time. We are constantly working to improve our security measures to ensure your data is safe with us.
+                    </div>
+                </details>
+                <!-- What do you run on my computer? -->
+                <details class="faq-item">
+                    <summary>
+                        <span class="q" data-i18n="faq.q1">What do you run on my computer?</span>
+                        <span class="caret" aria-hidden="true"></span>
+                    </summary>
+                    <div class="a" data-i18n="faq.a1">
+                        Nothing extra. Streamwise runs in the cloud as a secure middleman between your encoder (e.g. OBS) and your platforms.
+                    </div>
+                </details>
+                <!-- What platforms/tools is it compatible with? -->
+                <details class="faq-item">
+                    <summary>
+                        <span class="q" data-i18n="faq.q1">What platforms/tools is it compatible with?</span>
+                        <span class="caret" aria-hidden="true"></span>
+                    </summary>
+                    <div class="a" data-i18n="faq.a1">
+                        Any destination that accepts RTMP with H.264 video (and AAC audio). Works with OBS/Streamlabs and platforms like Twitch, YouTube, and Kick.
+                    </div>
+                </details>
+                <!-- How much latency does it introduce? -->
+                <details class="faq-item">
+                    <summary>
+                        <span class="q" data-i18n="faq.q1">How much latency does it introduce?</span>
+                        <span class="caret" aria-hidden="true"></span>
+                    </summary>
+                    <div class="a" data-i18n="faq.a1">
+                        A little. Expect ~3 to 5 seconds of additional latency depending on your region, bitrate, and settings. We continuously optimize to keep this low.
+                    </div>
+                </details>
+            </div>
         </div>
     </section>
 
@@ -279,7 +324,7 @@
                 <img src="assets/discord.svg" alt="Discord" />
             </a>
             <span style="padding-inline: 0.5rem;"><b data-i18n="trySection.condition">OR</b></span>
-            <a href="mailto:contact@liveguard.ca" class="dark-button">
+            <a href="mailto:contact@streamwise.gg" class="dark-button">
                 <span data-i18n="trySection.moreBtn2">Contact us!</span>
                 <img src="assets/gmail.svg" alt="Email" />
             </a>
@@ -301,9 +346,9 @@
       <h3 data-i18n="footer.contactSection.title">Reach us here:</h3>
       <div class="footer-icons">
         <a href="https://discord.gg/BMTmMMAwUc" target="_blank" rel="noopener"><img src="assets/discord.svg" alt="Discord" width="20" /></a>
-        <a href="mailto:contact@liveguard.ca" target="_blank" rel="noopener"><img src="assets/gmail.svg" alt="Email" width="20" /></a>
-        <a href="https://www.linkedin.com/company/liveguard" target="_blank" rel="noopener"><img src="assets/linkedin.svg" alt="LinkedIn" width="20" /></a>
-        <a href="https://www.instagram.com/liveguard.ca/" target="_blank" rel="noopener"><img src="assets/instagram.svg" alt="Instagram" width="20" /></a>
+        <a href="mailto:contact@streamwise.gg" target="_blank" rel="noopener"><img src="assets/gmail.svg" alt="Email" width="20" /></a>
+        <a href="https://www.linkedin.com/company/streamwise-gg" target="_blank" rel="noopener"><img src="assets/linkedin.svg" alt="LinkedIn" width="20" /></a>
+        <a href="https://www.instagram.com/streamwise.gg/" target="_blank" rel="noopener"><img src="assets/instagram.svg" alt="Instagram" width="20" /></a>
       </div>
     </div>
     <!-- <div class="footer-section">

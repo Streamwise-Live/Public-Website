@@ -502,10 +502,75 @@
     overflow: hidden;
 }
 
+.faq-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faq-text {
+    margin-bottom: 2.5rem;
+}
+
 .faq-text h1 {
     font-size: 40px;
 }
 
+.faq-accordion {
+    margin: 0 auto;
+    display: grid;
+    gap: 12px;
+    text-align: left;
+}
+
+.faq-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.faq-accordion summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.faq-accordion summary::-webkit-details-marker { display: none; }
+
+.faq-accordion .a {
+    padding: 0 20px 16px 20px;
+    color: var(--color-text-primary);
+    line-height: 1.6;
+    background: #fff;
+}
+
+.faq-accordion .caret {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
+    position: relative;
+}
+
+.faq-accordion .caret::before,
+.faq-accordion .caret::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 2px;
+    background: var(--color-text);
+    transform: translate(-50%, -50%);
+    transition: transform 0.2s ease;
+}
+.faq-accordion .caret::after { transform: translate(-50%, -50%) rotate(90deg); }
+.faq-accordion .faq-item[open] .caret::after { transform: translate(-50%, -50%) rotate(0deg); }
 
 /* Beta Testing Section */
 .beta {
