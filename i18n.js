@@ -92,6 +92,16 @@ $(function () {
                             },
                             onDemandDescription: 'Need more streaming time? Add on-demand hours anytime.'
                         },
+                        faqSection: {
+                            q1: "Do you store my stream keys?",
+                            a1: "Yes, but keys are locked away once saved, which is why you cannot view them afterwards. You can update or delete them at any time. We are constantly working to improve our security measures to ensure your data is safe with us.",
+                            q2: "What do you run on my computer?",
+                            a2: "Nothing. Streamwise runs in the cloud as a secure middleman between your recording tool and your streaming platforms.",
+                            q3: "What platforms/tools is it compatible with?",
+                            a3: "Any destination that accepts the standard streaming protocol. Works with recording tools like OBS or Streamlabs and platforms like Twitch, YouTube, and Kick.",
+                            q4: "How much latency does it introduce?",
+                            a4: "We only introduce about 3 to 5 seconds of additional latency depending on your region and stream settings. We continuously optimize to keep this as low as possible."
+                        },
                         trySection: {
                             title: 'INTERESTED IN BETA TESTING?',
                             description: 'We are always looking for content creators to help us build our platform and bring new ideas to the table!',
