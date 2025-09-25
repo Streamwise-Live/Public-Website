@@ -49,5 +49,12 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(section);
   });
 
+  const items = document.querySelectorAll('.faq-accordion details');
+  items.forEach((d) => {
+    d.addEventListener('toggle', () => {
+      if (d.open) items.forEach((o) => { if (o !== d) o.removeAttribute('open'); });
+    });
+  });
+
   typeEffect();
 });
