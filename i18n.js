@@ -51,7 +51,7 @@ $(function () {
                             },
                             feature3: {
                                 title: 'Seamless integration',
-                                description: 'Seamlessly integrates with your favorite streaming tools, Twitch, YouTube, and more, without disrupting your workflow. Enjoy full compatibility, multistreaming, and stream analytics.'
+                                description: 'Seamlessly integrates with your favorite streaming platforms, Twitch, YouTube, and more, without disrupting your workflow. Enjoy full compatibility with OBS, Streamlabs, and other popular encoders.'
                             },
                             moreBtn: 'See it in action'
                         },
