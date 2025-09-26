@@ -678,6 +678,7 @@ section * {
         justify-content: center;
         margin-left: 0;
         margin-right: 0;
+        padding-top: 1.5rem;
     }
 
     .hero-text {
