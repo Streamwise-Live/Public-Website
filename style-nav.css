@@ -1,18 +1,21 @@
 /* Header and Navbar */
 header {
-  background-color: var(--color-primary);
+  background-color: var(--color-background-primary);
   padding: 1rem;
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  display: flex;
   margin: 0 auto;
   flex-wrap: wrap;
   padding: 1rem;
   overflow: visible;
+}
+
+.navbar nav {
+  flex: 1;
+  display: flex;
 }
 
 .logo {
@@ -22,10 +25,11 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-right: 2rem;
 }
 
 .logo-img {
-  height: 55px;
+  height: 40px;
   width: auto;
   display: block;
 }
@@ -36,12 +40,20 @@ header {
   flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
+  flex: 1;
+  justify-content: space-between;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: var(--color-text-secondary);
+  color: var(--color-text-primary);
   font-weight: 500;
+}
+
+.nav-links > div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
 .nav-links .button {
@@ -128,7 +140,7 @@ header {
 .lang-toggle .lang-icon {
   width: 22px;
   height: 22px;
-  filter: brightness(0) invert(1);
+  /* filter: brightness(0) invert(1); */
   transition: opacity 0.2s ease;
 }
 
@@ -219,6 +231,7 @@ footer {
         visibility: hidden;
         overflow: hidden;
         transition: max-height 0.4s ease, opacity 0.3s ease;
+        overflow: visible;
     }
 
     .nav-links.show {

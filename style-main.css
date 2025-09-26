@@ -21,6 +21,10 @@
     --color-background-secondary: #0088EB;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     line-height: 1.6;
     animation: fadeInAnimation ease 1.5s;
@@ -49,10 +53,25 @@ body {
     text-decoration: none;
     border: none;
     border-radius: 8px;
+    text-align: center;
 }
 
 .dark-button img {
     margin-left: 0.5rem; 
     width: 18px; 
     height: 18px;
+}
+
+.disable-button {
+    background-color: grey;
+    color: var(--color-text-secondary);
+    padding: 1rem 1rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    line-height: 1.2;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    cursor: not-allowed;
 }

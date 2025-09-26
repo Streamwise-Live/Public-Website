@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="livestream, live, content, creator, ban, demonetization, AI, saas, software, cloud, editing, editor, tool, platform, video, youtube, twitch, kick, tiktok, obs">
-    <meta name="robots" content="index, join, about, how-it-works, features, customize">
+    <meta name="robots" content="index">
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.liveguard.ca/" />
-    <meta property="og:title" content="LiveGuard" />
+    <meta property="og:url" content="https://www.streamwise.gg/" />
+    <meta property="og:title" content="Streamwise" />
     <meta property="og:description" content="Stay focused on your content while our AI moderates in real time, keeping your stream safe, compliant, and free from strikes, bans, and demonetization." />
-    <meta property="og:image" content="https://www.liveguard.ca/assets/thumbnail.png" />
+    <!-- <meta property="og:image" content="https://www.streamwise.gg/assets/thumbnail.png" /> -->
 
     <!-- Title -->
-    <title>LiveGuard</title>
+    <title>Streamwise</title>
     <link rel="icon" type="image/x-icon" href="assets/logo.svg">
 
     <!-- Navbar script -->
@@ -51,7 +51,8 @@
     <div class="navbar">
         <div class="logo">
             <a href="/">
-                <img src="assets/lvgd-white-logo.svg" alt="LiveGuard" class="logo-img" />
+                <img src="assets/logo.svg" alt="Streamwise" class="logo-img only-pc" />
+                <img src="assets/hero-header.svg" alt="Streamwise" class="logo-img only-mobile" />
             </a>
             <button class="burger" aria-label="Toggle menu">
                 <img class="show" src="assets/menu_close.svg" alt="Menu">
@@ -60,30 +61,30 @@
         </div>
 
         <nav>
-        <ul class="nav-links">
-            <li class="nav-dropdown">
-                <button data-i18n="nav.featuresBtn" class="nav-toggle">Features ▾</button>
-                <ul class="nav-menu">
-                    <!-- <li><a data-i18n="nav.featuresMenu.aiOption" href="how-it-works">How it works</a></li>
-                    <li><a data-i18n="nav.featuresMenu.customizeOption" href="customize">Customizability</a></li> -->
-                    <!-- <li><a data-i18n="nav.featuresMenu.missionOption" href="mission">Made for you</a></li> -->
-                </ul>
-            </li>
-            <li><a data-i18n="nav.aboutBtn" href="about">About</a></li>
-            <li class="lang-dropdown">
-                <button class="lang-toggle">
-                    <img src="assets/globe.svg" alt="Language" class="lang-icon" />
-                </button>
-                <ul class="lang-menu" id="languageSwitcher">
-                    <!-- Gets automatically populated by i18n.js -->
-                    <!-- <li><a href="#" data-lang="en">EN</a></li> -->
-                    <!-- <li><a href="#" data-lang="fr">FR</a></li> -->
-                </ul>
-            </li>
-            <li><a href="https://discord.gg/BMTmMMAwUc" class="button">
-                <span data-i18n="nav.tryBtn">Join our Discord</span>
-                <img src="assets/discord.svg" alt="Discord" style="margin-left: 0.5rem; width: 18px; height: 18px;" />
-            </a></li>
+        <ul class="nav-links">            
+            <div>
+                <li><a data-i18n="nav.featuresBtn" href="#features">Features</a></li>
+                <li><a data-i18n="nav.missionBtn" href="#mission">Mission</a></li>
+                <li><a data-i18n="nav.pricingBtn" href="#pricing">Pricing</a></li>
+                <li><a data-i18n="nav.faqBtn" href="#faq">FAQ</a></li>
+            </div>
+
+            <div>
+                <li class="lang-dropdown">
+                    <button class="lang-toggle">
+                        <img src="assets/globe.svg" alt="Language" class="lang-icon" />
+                    </button>
+                    <ul class="lang-menu" id="languageSwitcher">
+                        <!-- Gets automatically populated by i18n.js -->
+                        <!-- <li><a href="#" data-lang="en">EN</a></li> -->
+                        <!-- <li><a href="#" data-lang="fr">FR</a></li> -->
+                    </ul>
+                </li>
+                <li><a href="https://discord.gg/BMTmMMAwUc" class="button">
+                    <span data-i18n="nav.tryBtn">Join our Discord</span>
+                    <img src="assets/discord.svg" alt="Discord" style="margin-left: 0.5rem; width: 18px; height: 18px;" />
+                </a></li>
+            </div>
         </ul>
         </nav>
     </div>
@@ -91,43 +92,56 @@
 
     <!-- Hero Section -->
     <section class="hero">
-    <div class="hero-content">
-        <div class="hero-text">
-            <h1><img src="assets/lvgd_black_logo.svg" alt="LiveGuard" class="black-logo"><span class="typed-word"></span><br><span data-i18n="sectionHero.title"> YOUR LIVESTREAM SO YOU DON'T HAVE TO</span></h1>
-            <p data-i18n="sectionHero.description">
-                Stay focused on your content while our real-time AI editor keeps your stream safe, compliant, and free from bans and demonetization, all with the power to customize your experience.
-            </p>
-        </div>
-        <div class="hero-image">
-            <div class="hero-decoration" style="top: 20%; left: 5%">
-                <img style="width: 80px; height: 80px; rotate: 40deg;" src="assets/blue-star.svg">
-            </div>
-            <div class="hero-decoration" style="bottom: 10%; right: 5%">
-                <img style="width: 80px; height: 80px; rotate: 70deg;" src="assets/blue-cross.svg">
-            </div>
-            <div class="device-wrapper">
-                <img src="assets/computer-live.svg" alt="LiveGuard hero graphic" class="device-image" />
-                <img src="assets/live.svg" alt="LIVE" class="device-video-live" />
-                <video class="device-video" autoplay muted loop playsinline>
-                    <source src="assets/video.mp4" type="video/mp4" />
-                    <!-- Your browser does not support the video tag. -->
-                </video>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1><img src="assets/hero-header.svg" alt="STREAMWISE " class="header-hero-logo"><span class="typed-word"></span><br><span data-i18n="sectionHero.title"> YOUR LIVESTREAM SO YOU DON'T HAVE TO</span></h1>
+                <p data-i18n="sectionHero.description">
+                    Real-time AI audio/video moderation that blocks bans, prevents demonetization, and adapts to your style — so you can stream stress-free.
+                </p>
+                <a data-i18n="sectionHero.actionBtn" href="mailto:contact@streamwise.gg" class="dark-button">Book a demo</a>
             </div>
         </div>
-    </div>
+        <div class="hero-banner">
+            <div class="hero-wrapper">
+                <img src="assets/hero-banner.svg" alt="Hero Banner" class="hero-image">
+                <div class="hero-fire">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="125px" height="189.864px" viewBox="0 0 125 189.864" enable-background="new 0 0 125 189.864" xml:space="preserve">    
+                        <path class="flame-main" fill="#1E3A8A" d="M76.553,186.09c0,0-10.178-2.976-15.325-8.226s-9.278-16.82-9.278-16.82s-0.241-6.647-4.136-18.465
+                            c0,0,3.357,4.969,5.103,9.938c0,0-5.305-21.086,1.712-30.418c7.017-9.333,0.571-35.654-2.25-37.534c0,0,13.07,5.64,19.875,47.54
+                            c6.806,41.899,16.831,45.301,6.088,53.985"/>   
+                        <path class="flame-main one" fill="#2563EB" d="M61.693,122.257c4.117-15.4,12.097-14.487-11.589-60.872c0,0,32.016,10.223,52.601,63.123
+                            c20.585,52.899-19.848,61.045-19.643,61.582c0.206,0.537-19.401-0.269-14.835-18.532S57.576,137.656,61.693,122.257z"/>     
+                        <path class="flame-main two" fill="#3B82F6" d="M81.657,79.192c0,0,11.549,24.845,3.626,40.02c-7.924,15.175-21.126,41.899-0.425,64.998
+                            C84.858,184.21,125.705,150.905,81.657,79.192z"/> 
+                        <path class="flame-main three" fill="#60A5FA" d="M99.92,101.754c0,0-23.208,47.027-12.043,80.072c0,0,32.741-16.073,20.108-45.79
+                            C95.354,106.319,99.92,114.108,99.92,101.754z"/>  
+                        <path class="flame-main four" fill="#1E40AF" d="M103.143,105.917c0,0,8.927,30.753-1.043,46.868c-9.969,16.115-14.799,29.041-14.799,29.041
+                            S134.387,164.603,103.143,105.917z"/>
+                        <path class="flame-main five" fill="#93C5FD" d="M62.049,104.171c0,0-15.645,67.588,10.529,77.655C98.753,191.894,69.033,130.761,62.049,104.171z"/>
+                        <path class="flame" fill="#1D4ED8" d="M101.011,112.926c0,0,8.973,10.519,4.556,16.543C99.37,129.735,106.752,117.406,101.011,112.926z"/>
+                        <path class="flame one" fill="#2563EB" d="M55.592,126.854c0,0-3.819,13.29,2.699,16.945C64.038,141.48,55.907,132.263,55.592,126.854z"/>
+                        <path class="flame two" fill="#3B82F6" d="M54.918,104.595c0,0-3.959,6.109-1.24,8.949C56.93,113.256,52.228,107.329,54.918,104.595z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Real-time Protection Section -->
-    <section class="features blue">
+    <section class="features blue" id="features">
     <div class="features-content">
         <div class="features-text">
-            <h1 data-i18n="featuresSection.feature1.title">Real-time protection</h1>
+            <h1>
+                <span class="circle-number" style="margin-right: 5px;">1</span>
+                <span data-i18n="featuresSection.feature1.title">Real-time protection</span>
+            </h1>
             <p data-i18n="featuresSection.feature1.description">
                 Stay focused on your content while our AI moderates in real time, keeping your stream safe, compliant, and free from strikes, bans, and demonetization.
             </p>
-            <div class="action-button">
+            <!-- <div class="action-button">
                 <a data-i18n="featuresSection.moreBtn" href="how-it-works" class="dark-button">See it in action</a>
-            </div>
+            </div> -->
         </div>
         <div class="features-image realtime">
             <img src="assets/twitch_browser.png" class="twitch-browser">
@@ -139,16 +153,19 @@
     <section class="features">
     <div class="features-content">
         <div class="features-image customize only-pc">
-            <img src="assets/app_browser.png" class="app-browser">
+            <img src="assets/app_editor.png" class="app-browser">
         </div>
         <div class="features-text">
-            <h1 data-i18n="featuresSection.feature2.title">Unlimited possibilities</h1>
+            <h1>
+                <span class="circle-number inverted-circle" style="margin-right: 5px;">2</span>
+                <span data-i18n="featuresSection.feature2.title">Unlimited possibilities</span>
+            </h1>
             <p data-i18n="featuresSection.feature2.description">
                 Think beyond basic protection filters. Our modular tools let you personalize your stream your way — with full transparency and flexibility.
             </p>
         </div>
         <div class="features-image customize only-mobile">
-            <img src="assets/app_browser.png" class="app-browser">
+            <img src="assets/app_editor.png" class="app-browser">
         </div>
     </div>
     </section>
@@ -157,19 +174,22 @@
     <section class="features blue">
     <div class="features-content">
         <div class="features-text">
-            <h1 data-i18n="featuresSection.feature3.title">Seamless integration</h1>
+            <h1>
+                <span class="circle-number" style="margin-right: 5px;">3</span>
+                <span data-i18n="featuresSection.feature3.title">Seamless integration</span>
+            </h1>
             <p data-i18n="featuresSection.feature3.description">
-                Seamlessly integrates with your favorite streaming tools, Twitch, YouTube, and more, without disrupting your workflow. Enjoy full compatibility, multistreaming, and stream analytics.
+                Seamlessly integrates with your favorite streaming platforms, Twitch, YouTube, and more, without disrupting your workflow. Enjoy full compatibility with OBS, Streamlabs, and other popular encoders.
             </p>
         </div>
         <div class="features-image integration">
-            <img src="assets/obs_studio_app.png" class="obs-app">
+            <img src="assets/app_add_platform.png" class="obs-app">
         </div>
     </div>
     </section>
 
     <!-- Creator First Section -->
-    <section class="creator">
+    <section class="creator" id="mission">
         <div class="orbit-container">
             <img src="assets/hands-holding-star.svg" alt="Hands holding star" class="orbit-center-image">
             <div class="orbit-wrapper youtube">
@@ -188,36 +208,133 @@
                 </div>
             </div>
         </div>
-        <!-- <img src="assets/hands-holding-star.svg" alt="Hands holding star"> -->
         <h2 data-i18n="creatorSection.title">CREATOR FIRST</h2>
-        <p data-i18n="creatorSection.description1">We believe livestreaming should be fun, creative, and truly yours. No matter the platform, you deserve the freedom to customize your stream and share your best content-without the fear of sudden copyright strikes or unfair ToS violations.</p>
-        <p data-i18n="creatorSection.description2">We are committed to putting you at the forefront of LiveGuard's priorities.</p>
+        <p data-i18n="creatorSection.description1">We believe livestreaming should be fun, creative, and safe for all content creators. No matter the platform, you deserve the freedom to own your stream and share your best content-without the fear of mistakes, sudden copyright strikes or unfair ToS violations.</p>
+        <p data-i18n="creatorSection.description2">In a world where creators face constant pressure to produce more and better content, we're building a platform and community that offers the support and tools they need to thrive.</p>
         <div class="action-button">
-            <a data-i18n="creatorSection.moreBtn" href="mission" class="dark-button">See how this benefits you</a>
+            <a data-i18n="creatorSection.moreBtn" href="mailto:contact@streamwise.gg" class="dark-button">See how this benefits you</a>
         </div>
     </section>
 
-  <!-- Beta Testing Section -->
-  <section class="beta">
-    <h2 data-i18n="trySection.title">INTERESTED IN BETA TESTING?</h2>
-    <p data-i18n="trySection.description">We are always looking for content creators to help us build our platform and bring new ideas to the table!</p>
-    <div class="action-button">
-        <a href="https://discord.gg/BMTmMMAwUc" class="dark-button">
-            <span data-i18n="trySection.moreBtn1">Join our Discord</span>
-            <img src="assets/discord.svg" alt="Discord" />
-        </a>
-        <span style="padding-inline: 0.5rem;"><b data-i18n="trySection.condition">OR</b></span>
-        <a href="mailto:contact@liveguard.ca" class="dark-button">
-            <span data-i18n="trySection.moreBtn2">Contact us!</span>
-            <img src="assets/gmail.svg" alt="Email" />
-        </a>
-    </div>
-  </section>
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="pricing-content">
+            <div class="pricing-text">
+                <h1 data-i18n="pricingSection.title">Pricing</h1>
+                <p data-i18n="pricingSection.description">All prices in USD, per month.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-plan">
+                    <h3 data-i18n="pricingSection.plans.free.name">Free</h3>
+                    <p><span class="currency">$</span><span data-i18n="pricingSection.plans.free.price">0</span><span class="period">/mo</span></p>
+                    <ul>
+                        <li data-i18n="pricingSection.plans.free.feature">10 hours included</li>
+                    </ul>
+                    <a class="dark-button" data-i18n="pricingSection.plans.free.buyBtn" href="mailto:contact@streamwise.gg">Book a demo</a>
+                </div>
+                <div class="pricing-plan">
+                    <h3 data-i18n="pricingSection.plans.starter.name">Starter</h3>
+                    <p><span class="currency">$</span><span data-i18n="pricingSection.plans.starter.price">10</span><span class="period">/mo</span></p>
+                    <ul>
+                        <li data-i18n="pricingSection.plans.starter.feature">30 hours included</li>
+                    </ul>
+                     <a class="disable-button" data-i18n="pricingSection.plans.starter.buyBtn">Coming soon</a>
+                </div>
+                <div class="pricing-plan">
+                    <h3 data-i18n="pricingSection.plans.intermediate.name">Intermediate</h3>
+                    <p><span class="currency">$</span><span data-i18n="pricingSection.plans.intermediate.price">16</span><span class="period">/mo</span></p>
+                    <ul>
+                        <li data-i18n="pricingSection.plans.intermediate.feature">55 hours included</li>
+                    </ul>
+                     <a class="disable-button" data-i18n="pricingSection.plans.intermediate.buyBtn">Coming soon</a>
+                </div>
+                <div class="pricing-plan">
+                    <h3 data-i18n="pricingSection.plans.pro.name">Pro</h3>
+                    <p><span class="currency">$</span><span data-i18n="pricingSection.plans.pro.price">22</span><span class="period">/mo</span></p>
+                    <ul>
+                        <li data-i18n="pricingSection.plans.pro.feature">80 hours included</li>
+                    </ul>
+                    <a class="disable-button" data-i18n="pricingSection.plans.pro.buyBtn">Coming soon</a>
+                </div>
+            </div>
+            <p data-i18n="pricingSection.onDemandDescription">Need more streaming time? Add on-demand hours anytime</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="faq-content">
+            <div class="faq-text">
+                <h1>FAQ</h1>
+            </div>
+
+            <div class="faq-accordion" role="list">
+                <!-- Do you store my stream keys? -->
+                <details class="faq-item">
+                    <summary>
+                        <span class="q" data-i18n="faqSection.q1">Do you store my stream keys?</span>
+                        <span class="caret" aria-hidden="true"></span>
+                    </summary>
+                    <div class="a" data-i18n="faqSection.a1">
+                        Yes, but keys are locked away once saved, which is why you cannot view them afterwards. You can update or delete them at any time. We are constantly working to improve our security measures to ensure your data is safe with us.
+                    </div>
+                </details>
+                <!-- What do you run on my computer? -->
+                <details class="faq-item">
+                    <summary>
+                        <span class="q" data-i18n="faqSection.q2">What do you run on my computer?</span>
+                        <span class="caret" aria-hidden="true"></span>
+                    </summary>
+                    <div class="a" data-i18n="faqSection.a2">
+                        Nothing. Streamwise runs in the cloud as a secure middleman between your recording tool and your streaming platforms.
+                    </div>
+                </details>
+                <!-- What platforms/tools is it compatible with? -->
+                <details class="faq-item">
+                    <summary>
+                        <span class="q" data-i18n="faqSection.q3">What platforms/tools is it compatible with?</span>
+                        <span class="caret" aria-hidden="true"></span>
+                    </summary>
+                    <div class="a" data-i18n="faqSection.a3">
+                        Any destination that accepts the standard streaming protocol. Works with recording tools like OBS or Streamlabs and platforms like Twitch, YouTube, and Kick.
+                    </div>
+                </details>
+                <!-- How much latency does it introduce? -->
+                <details class="faq-item">
+                    <summary>
+                        <span class="q" data-i18n="faqSection.q4">How much latency does it introduce?</span>
+                        <span class="caret" aria-hidden="true"></span>
+                    </summary>
+                    <div class="a" data-i18n="faqSection.a4">
+                        We only introduce about 3 to 5 seconds of additional latency depending on your region and stream settings. We continuously optimize to keep this as low as possible.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beta Testing Section -->
+    <section class="beta">
+        <h2 data-i18n="trySection.title">INTERESTED IN BETA TESTING?</h2>
+        <p data-i18n="trySection.description">We are always looking for content creators to help us build our platform and bring new ideas to the table!</p>
+        <div class="action-button">
+            <a href="https://discord.gg/BMTmMMAwUc" class="dark-button">
+                <span data-i18n="trySection.moreBtn1">Join our Discord</span>
+                <img src="assets/discord.svg" alt="Discord" />
+            </a>
+            <span style="padding-inline: 0.5rem;"><b data-i18n="trySection.condition">OR</b></span>
+            <a href="mailto:contact@streamwise.gg" class="dark-button">
+                <span data-i18n="trySection.moreBtn2">Contact us!</span>
+                <img src="assets/gmail.svg" alt="Email" />
+            </a>
+        </div>
+    </section>
 
   <!-- Footer -->
   <footer>
     <div class="footer-section">
-      <div class="logo">LiveGuard</div>
+      <div class="logo">Streamwise</div>
       <div>Made with ❤️ in Montreal</div>
     </div>
     <!-- <div class="footer-section">
@@ -229,9 +346,9 @@
       <h3 data-i18n="footer.contactSection.title">Reach us here:</h3>
       <div class="footer-icons">
         <a href="https://discord.gg/BMTmMMAwUc" target="_blank" rel="noopener"><img src="assets/discord.svg" alt="Discord" width="20" /></a>
-        <a href="mailto:contact@liveguard.ca" target="_blank" rel="noopener"><img src="assets/gmail.svg" alt="Email" width="20" /></a>
-        <a href="https://www.linkedin.com/company/liveguard" target="_blank" rel="noopener"><img src="assets/linkedin.svg" alt="LinkedIn" width="20" /></a>
-        <a href="https://www.instagram.com/liveguard.ca/" target="_blank" rel="noopener"><img src="assets/instagram.svg" alt="Instagram" width="20" /></a>
+        <a href="mailto:contact@streamwise.gg" target="_blank" rel="noopener"><img src="assets/gmail.svg" alt="Email" width="20" /></a>
+        <a href="https://www.linkedin.com/company/streamwise-gg" target="_blank" rel="noopener"><img src="assets/linkedin.svg" alt="LinkedIn" width="20" /></a>
+        <a href="https://www.instagram.com/streamwise.gg/" target="_blank" rel="noopener"><img src="assets/instagram.svg" alt="Instagram" width="20" /></a>
       </div>
     </div>
     <!-- <div class="footer-section">

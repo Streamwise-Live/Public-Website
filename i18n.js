@@ -27,19 +27,17 @@ $(function () {
                 en: {
                     translation: {
                         nav: {
-                            featuresBtn: 'Features ▾',
-                            aboutBtn: 'About',
-                            featuresMenu: {
-                                aiOption: 'How it works',
-                                customizeOption: 'Customizability',
-                                missionOption: 'Made for you',
-                            },
+                            featuresBtn: 'Features',
+                            missionBtn: 'Mission',
+                            pricingBtn: 'Pricing',
+                            faqBtn: 'FAQ',
                             tryBtn: 'Join our Discord'
                         },
                         sectionHero: {
                             title: 'YOUR LIVESTREAM SO YOU DON\'T HAVE TO',
                             keywords: ["MODERATES", "EDITS", "FILTERS", "ENHANCES"],
-                            description: 'Stay focused on your content while our real-time AI editor keeps your stream safe, compliant, and free from bans and demonetization, all with the power to customize your experience.'
+                            description: 'Real-time AI audio/video moderation that blocks bans, prevents demonetization, and adapts to your style — so you can stream stress-free.',
+                            actionBtn: 'Book a demo'
                         },
                         featuresSection: {
                             title: 'EFFORTLESS HIGH QUALITY.',
@@ -53,15 +51,56 @@ $(function () {
                             },
                             feature3: {
                                 title: 'Seamless integration',
-                                description: 'Seamlessly integrates with your favorite streaming tools, Twitch, YouTube, and more, without disrupting your workflow. Enjoy full compatibility, multistreaming, and stream analytics.'
+                                description: 'Seamlessly integrates with your favorite streaming platforms, Twitch, YouTube, and more, without disrupting your workflow. Enjoy full compatibility with OBS, Streamlabs, and other popular encoders.'
                             },
                             moreBtn: 'See it in action'
                         },
                         creatorSection: {
                             title: 'CREATOR FIRST',
-                            description1: 'We believe livestreaming should be fun, creative, and truly yours. No matter the platform, you deserve the freedom to customize your stream and share your best content-without the fear of sudden copyright strikes or unfair ToS violations.',
-                            description2: 'We are committed to putting you at the forefront of LiveGuard\'s priorities.',
+                            description1: 'We believe livestreaming should be fun, creative, and safe for all content creators. No matter the platform, you deserve the freedom to own your stream and share your best content-without the fear of mistakes, sudden copyright strikes or unfair ToS violations.',
+                            description2: 'In a world where creators face constant pressure to produce more and better content, we\'re building a platform and community that offers the support and tools they need to thrive.',
                             moreBtn: 'See how this benefits you'
+                        },
+                        pricingSection: {
+                            title: 'Pricing',
+                            description: 'All prices in USD, per month.',
+                            plans: {
+                                free: {
+                                    name: 'Free',
+                                    price: '0',
+                                    feature: '10 hours included',
+                                    buyBtn: 'Book a demo'
+                                },
+                                starter: {
+                                    name: 'Starter',
+                                    price: '10',
+                                    feature: '30 hours included',
+                                    buyBtn: 'Coming soon'
+                                },
+                                intermediate: {
+                                    name: 'Intermediate',
+                                    price: '16',
+                                    feature: '55 hours included',
+                                    buyBtn: 'Coming soon'
+                                },
+                                pro: {
+                                    name: 'Pro',
+                                    price: '22',
+                                    feature: '80 hours included',
+                                    buyBtn: 'Coming soon'
+                                }
+                            },
+                            onDemandDescription: 'Need more streaming time? Add on-demand hours anytime.'
+                        },
+                        faqSection: {
+                            q1: "Do you store my stream keys?",
+                            a1: "Yes, but keys are locked away once saved, which is why you cannot view them afterwards. You can update or delete them at any time. We are constantly working to improve our security measures to ensure your data is safe with us.",
+                            q2: "What do you run on my computer?",
+                            a2: "Nothing. Streamwise runs in the cloud as a secure middleman between your recording tool and your streaming platforms.",
+                            q3: "What platforms/tools is it compatible with?",
+                            a3: "Any destination that accepts the standard streaming protocol. Works with recording tools like OBS or Streamlabs and platforms like Twitch, YouTube, and Kick.",
+                            q4: "How much latency does it introduce?",
+                            a4: "We only introduce about 3 to 5 seconds of additional latency depending on your region and stream settings. We continuously optimize to keep this as low as possible."
                         },
                         trySection: {
                             title: 'INTERESTED IN BETA TESTING?',
@@ -90,89 +129,86 @@ $(function () {
                                 link1: 'Documentation',
                                 link2: 'Support'
                             }
-                        },
-                        joinPage: {
-                            formSection: {
-                                title: "Hey, You're here early!",
-                                description: "Join our waitlist to get early access to our latest features for FREE and help us innovate a life changing service for all content creators out there.",
-                                followUs: "Follow us on social media"
-                            }
-                        },
-                        howItWorksPage: {
-                            sectionHero: {
-                                title: "Transparency is so important for us",
-                                description: "We're bringing you behind the scenes to show you how LiveGuard works!"
-                            },
-                            pipelineSection: {
-                                description: "LiveGuard uses a real-time multimodal AI system on the cloud that processes both video and audio streams simultaneously. Acting as a smart middleman between your recording tool and the livestreaming platform, where we intercept and edit your stream before it ever reaches the platform, ensuring your can produce the best content.",
-                                join: "Try it Here!",
-                                featuresHeader: "What our system detects and protects you from in real-time:",
-                                audioFeatures: {
-                                    feature1: "Swearing & toxicity",
-                                    feature2: "Copyrighted music",
-                                    feature3: "Private information leaks"
-                                },
-                                videoFeatures: {
-                                    feature1: "Nudity & suggestive content",
-                                    feature2: "Violence & drugs",
-                                    feature3: "Copyrighted videos/images"
-                                },
-                                customFeatures: {
-                                    feature1: "Custom words/sentences",
-                                    feature2: "Custom person",
-                                    feature3: "Custom object",
-                                    feature4: "Custom logo/brand"
-                                }
-                            },
-                            audioDetectionSection: {
-                                title: "Audio Detection",
-                                description: "Our audio engine uses cutting-edge real-time speech recognition and acoustic analysis to detect harmful or unwanted content as it happens. From profanity and copyrighted content to personal details or slurs, our system catches it before it reaches the streaming platform. Whether for protection or creative control, with customizable triggers, you can create interactive moments or automatically respond to specific words and phrases."
-                            },
-                            videoDetectionSection: {
-                                title: "Video Detection",
-                                description: "Our video engine leverages real-time AI vision models to detect visual violations such as nudity, violence, logos, and copyrighted content before they ever appear on your livestream. This ensures your content stays compliant with platform guidelines and free from strikes or takedowns. With support for custom detection, you can also upload reference images to monitor for specific people, objects, or branding."
-                            }
                         }
                     }
                 },
                 fr: {
                     translation: {
                         nav: {
-                            featuresBtn: 'Fonctionnalités ▾',
-                            aboutBtn: 'À propos',
-                            featuresMenu: {
-                            aiOption: 'Comment ça marche',
-                            customizeOption: 'Personnalisation',
-                            missionOption: 'Conçu pour vous'
-                            },
+                            featuresBtn: 'Fonctionnalités',
+                            missionBtn: 'Mission',
+                            pricingBtn: 'Prix',
+                            faqBtn: 'FAQ',
                             tryBtn: 'Rejoignez notre Discord'
                         },
                         sectionHero: {
                             title: 'VOTRE LIVESTREAM',
                             keywords: ["MODÈRE", "ÉDITE", "FILTRE", "AMÉLIORE"],
-                            description: 'Restez concentré sur votre contenu pendant que notre IA modère en temps réel, gardant votre diffusion sûre, conforme et protégée contre les avertissements, bannissements et démonétisations.'
+                            description: 'Modération audio/vidéo IA en temps réel qui bloque les bannissements, prévient la démonétisation et s\'adapte à votre style — pour que vous puissiez streamer sans stress.',
+                            actionBtn: 'Demander une démo'
                         },
                         featuresSection: {
                             title: 'QUALITÉ SANS EFFORT.',
                             feature1: {
-                                title: 'Protection en temps réel',
+                                title: 'Protection instantanée',
                                 description: 'Nous surveillons votre vidéo et votre audio pendant que vous diffusez, avec une latence minimale afin que tout contenu indésirable soit automatiquement filtré.'
                             },
                             feature2: {
                                 title: 'Possibilités illimitées',
-                                description: 'Allez au-delà des filtres de base. Nos outils modulaires vous permettent de personnaliser votre stream à votre manière — en toute transparence et flexibilité.'
+                                description: 'Allez au-delà des filtres de base. Nos outils modulaires vous permettent de personnaliser votre stream à votre manière en toute transparence et flexibilité.'
                             },
                             feature3: {
-                                title: 'Intégration transparente',
-                                description: 'S\'intègre parfaitement à vos outils de streaming préférés, Twitch, YouTube, et bien d\'autres, sans perturber votre flux de travail. Profitez d\'une compatibilité totale, du multistreaming et d\'analyses de stream.'
+                                title: 'Intégration fluide',
+                                description: 'S\'intègre parfaitement à vos outils de streaming préférés, Twitch, YouTube, et bien d\'autres, sans perturber votre flux de travail.'
                             },
-                            moreBtn: 'Voir LiveGuard en action'
+                            moreBtn: 'Voir Streamwise en action'
                         },
                         creatorSection: {
                             title: 'LES CRÉATEURS AVANT TOUT',
-                            description1: 'Nous croyons que le livestreaming doit être amusant, créatif et véritablement à votre image. Peu importe la plateforme, vous méritez la liberté de personnaliser votre stream et de partager votre meilleur contenu — sans craindre les sanctions soudaines pour droits d\'auteur ou les violations injustes des conditions d\'utilisation.',
-                            description2: 'Nous nous engageons à faire de vous la priorité absolue de LiveGuard.',
+                            description1: 'Nous croyons que le livestreaming doit être amusant, créatif et sûr pour tous les créateurs de contenu. Quelle que soit la plateforme, vous méritez la liberté de posséder votre stream et de partager votre meilleur contenu — sans la crainte d\'erreurs, de strikes soudains pour atteinte aux droits d\'auteur ou de violations injustes des conditions d\'utilisation.',
+                            description2: 'Dans un monde où les créateurs subissent une pression constante pour produire toujours plus de contenu, nous construisons une plateforme et une communauté qui leur offrent le soutien et les outils dont ils ont besoin pour réussir.',
                             moreBtn: 'Découvrez ce que cela vous apporte'
+                        },
+                        pricingSection: {
+                            title: 'Prix',
+                            description: 'Tout les prix en USD, par mois.',
+                            plans: {
+                                free: {
+                                    name: 'Graduit',
+                                    price: '0',
+                                    feature: '10 heures incluses',
+                                    buyBtn: 'Demander une démo'
+                                },
+                                starter: {
+                                    name: 'Débutant',
+                                    price: '10',
+                                    feature: '30 heures incluses',
+                                    buyBtn: 'Bientôt disponible'
+                                },
+                                intermediate: {
+                                    name: 'Intermédiaire',
+                                    price: '16',
+                                    feature: '55 heures incluses',
+                                    buyBtn: 'Bientôt disponible'
+                                },
+                                pro: {
+                                    name: 'Pro',
+                                    price: '22',
+                                    feature: '80 heures incluses',
+                                    buyBtn: 'Bientôt disponible'
+                                }
+                            },
+                            onDemandDescription: 'Besoin de plus de temps de streaming? Ajoutez des heures à la demande à tout moment.'
+                        },
+                        faqSection: {
+                            q1: "Conservez-vous mes clés de stream?",
+                            a1: "Oui, mais les clés sont verrouillées une fois enregistrées, c'est pourquoi vous ne pouvez plus les consulter ensuite. Par contre, Vous pouvez les mettre à jour ou les supprimer à tout moment. Nous travaillons en permanence à améliorer nos mesures de sécurité afin de garantir que vos données soient en sécurité avec nous.",
+                            q2: "Qu'est-ce qui roule sur mon ordinateur avec vous?",
+                            a2: "Rien. Streamwise fonctionne dans le cloud comme intermédiaire sécurisé entre votre outil d'enregistrement et vos plateformes de streaming.",
+                            q3: "Avec quelles plateformes/outils est-ce compatible?",
+                            a3: "Toute destination qui accepte le protocole standard de streaming. Fonctionne avec des outils d'enregistrement comme OBS ou Streamlabs et des plateformes comme Twitch, YouTube et Kick.",
+                            q4: "Quelle délai sur la vidéo cela introduit-il?",
+                            a4: "Nous n'ntroduisons qu'environ 3 à 5 secondes de latence supplémentaire selon votre région et vos paramètres de stream. Nous optimisons continuellement afin de maintenir ce délai aussi bas que possible."
                         },
                         trySection: {
                             title: 'INTÉRESSÉ(E) PAR LE PROGRAMME BÊTA?',
