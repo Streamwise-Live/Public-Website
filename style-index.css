@@ -13,7 +13,7 @@
     color: var(--color-text);
     text-align: center;
     min-height: calc(88vh - 100px);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .hero-content {
@@ -330,6 +330,10 @@
     margin: 40px auto;
 }
 
+section * {
+    overflow-x: visible !important;
+}
+
 .orbit-center-image {
     width: 250px;
     height: 250px;
@@ -636,6 +640,14 @@
 
 
 @media (max-width: 768px) {
+    * {
+        overflow-x: hidden;
+    }
+
+    section {
+        overflow-x: visible !important;
+    }
+
     .only-mobile {
         display: flex !important;
     }
@@ -680,12 +692,6 @@
         margin-right: 0 !important;
         margin-left: 0 !important;
         min-height: auto;
-    }
-
-    .features-image.realtime,
-    .features-image.customize,
-    .features-image.integration {
-        margin: 0;
     }
 
     .twitch-browser {
