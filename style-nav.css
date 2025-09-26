@@ -10,7 +10,14 @@ header {
   margin: 0 auto;
   flex-wrap: wrap;
   padding: 1rem;
-  overflow: visible;
+  overflow: visible !important;
+}
+
+header {
+    overflow: visible !important;
+}
+header * {
+    overflow: visible !important;
 }
 
 .navbar nav {
