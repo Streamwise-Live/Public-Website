@@ -135,41 +135,80 @@ $(function () {
                 fr: {
                     translation: {
                         nav: {
-                            featuresBtn: 'Fonctionnalités ▾',
-                            aboutBtn: 'À propos',
-                            featuresMenu: {
-                            aiOption: 'Comment ça marche',
-                            customizeOption: 'Personnalisation',
-                            missionOption: 'Conçu pour vous'
-                            },
+                            featuresBtn: 'Fonctionnalités',
+                            missionBtn: 'Mission',
+                            pricingBtn: 'Prix',
+                            faqBtn: 'FAQ',
                             tryBtn: 'Rejoignez notre Discord'
                         },
                         sectionHero: {
                             title: 'VOTRE LIVESTREAM',
                             keywords: ["MODÈRE", "ÉDITE", "FILTRE", "AMÉLIORE"],
-                            description: 'Restez concentré sur votre contenu pendant que notre IA modère en temps réel, gardant votre diffusion sûre, conforme et protégée contre les avertissements, bannissements et démonétisations.'
+                            description: 'Modération audio/vidéo IA en temps réel qui bloque les bannissements, prévient la démonétisation et s\'adapte à votre style — pour que vous puissiez streamer sans stress.',
+                            actionBtn: 'Demander une démo'
                         },
                         featuresSection: {
                             title: 'QUALITÉ SANS EFFORT.',
                             feature1: {
-                                title: 'Protection en temps réel',
+                                title: 'Protection instantanée',
                                 description: 'Nous surveillons votre vidéo et votre audio pendant que vous diffusez, avec une latence minimale afin que tout contenu indésirable soit automatiquement filtré.'
                             },
                             feature2: {
                                 title: 'Possibilités illimitées',
-                                description: 'Allez au-delà des filtres de base. Nos outils modulaires vous permettent de personnaliser votre stream à votre manière — en toute transparence et flexibilité.'
+                                description: 'Allez au-delà des filtres de base. Nos outils modulaires vous permettent de personnaliser votre stream à votre manière en toute transparence et flexibilité.'
                             },
                             feature3: {
-                                title: 'Intégration transparente',
-                                description: 'S\'intègre parfaitement à vos outils de streaming préférés, Twitch, YouTube, et bien d\'autres, sans perturber votre flux de travail. Profitez d\'une compatibilité totale, du multistreaming et d\'analyses de stream.'
+                                title: 'Intégration fluide',
+                                description: 'S\'intègre parfaitement à vos outils de streaming préférés, Twitch, YouTube, et bien d\'autres, sans perturber votre flux de travail.'
                             },
-                            moreBtn: 'Voir LiveGuard en action'
+                            moreBtn: 'Voir Streamwise en action'
                         },
                         creatorSection: {
                             title: 'LES CRÉATEURS AVANT TOUT',
-                            description1: 'Nous croyons que le livestreaming doit être amusant, créatif et véritablement à votre image. Peu importe la plateforme, vous méritez la liberté de personnaliser votre stream et de partager votre meilleur contenu — sans craindre les sanctions soudaines pour droits d\'auteur ou les violations injustes des conditions d\'utilisation.',
-                            description2: 'Nous nous engageons à faire de vous la priorité absolue de LiveGuard.',
+                            description1: 'Nous croyons que le livestreaming doit être amusant, créatif et sûr pour tous les créateurs de contenu. Quelle que soit la plateforme, vous méritez la liberté de posséder votre stream et de partager votre meilleur contenu — sans la crainte d\'erreurs, de strikes soudains pour atteinte aux droits d\'auteur ou de violations injustes des conditions d\'utilisation.',
+                            description2: 'Dans un monde où les créateurs subissent une pression constante pour produire toujours plus de contenu, nous construisons une plateforme et une communauté qui leur offrent le soutien et les outils dont ils ont besoin pour réussir.',
                             moreBtn: 'Découvrez ce que cela vous apporte'
+                        },
+                        pricingSection: {
+                            title: 'Prix',
+                            description: 'Tout les prix en USD, par mois.',
+                            plans: {
+                                free: {
+                                    name: 'Graduit',
+                                    price: '0',
+                                    feature: '10 heures incluses',
+                                    buyBtn: 'Demander une démo'
+                                },
+                                starter: {
+                                    name: 'Débutant',
+                                    price: '10',
+                                    feature: '30 heures incluses',
+                                    buyBtn: 'Bientôt disponible'
+                                },
+                                intermediate: {
+                                    name: 'Intermédiaire',
+                                    price: '16',
+                                    feature: '55 heures incluses',
+                                    buyBtn: 'Bientôt disponible'
+                                },
+                                pro: {
+                                    name: 'Pro',
+                                    price: '22',
+                                    feature: '80 heures incluses',
+                                    buyBtn: 'Bientôt disponible'
+                                }
+                            },
+                            onDemandDescription: 'Besoin de plus de temps de streaming? Ajoutez des heures à la demande à tout moment.'
+                        },
+                        faqSection: {
+                            q1: "Conservez-vous mes clés de stream?",
+                            a1: "Oui, mais les clés sont verrouillées une fois enregistrées, c'est pourquoi vous ne pouvez plus les consulter ensuite. Par contre, Vous pouvez les mettre à jour ou les supprimer à tout moment. Nous travaillons en permanence à améliorer nos mesures de sécurité afin de garantir que vos données soient en sécurité avec nous.",
+                            q2: "Qu'est-ce qui roule sur mon ordinateur avec vous?",
+                            a2: "Rien. Streamwise fonctionne dans le cloud comme intermédiaire sécurisé entre votre outil d'enregistrement et vos plateformes de streaming.",
+                            q3: "Avec quelles plateformes/outils est-ce compatible?",
+                            a3: "Toute destination qui accepte le protocole standard de streaming. Fonctionne avec des outils d'enregistrement comme OBS ou Streamlabs et des plateformes comme Twitch, YouTube et Kick.",
+                            q4: "Quelle délai sur la vidéo cela introduit-il?",
+                            a4: "Nous n'ntroduisons qu'environ 3 à 5 secondes de latence supplémentaire selon votre région et vos paramètres de stream. Nous optimisons continuellement afin de maintenir ce délai aussi bas que possible."
                         },
                         trySection: {
                             title: 'INTÉRESSÉ(E) PAR LE PROGRAMME BÊTA?',
