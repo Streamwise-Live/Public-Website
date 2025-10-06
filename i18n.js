@@ -31,7 +31,8 @@ $(function () {
                             missionBtn: 'Mission',
                             pricingBtn: 'Pricing',
                             faqBtn: 'FAQ',
-                            tryBtn: 'Join our Discord'
+                            tryBtn: 'Join our Discord',
+                            lang: "EN"
                         },
                         sectionHero: {
                             title: 'YOUR LIVESTREAM SO YOU DON\'T HAVE TO',
@@ -139,7 +140,8 @@ $(function () {
                             missionBtn: 'Mission',
                             pricingBtn: 'Prix',
                             faqBtn: 'FAQ',
-                            tryBtn: 'Rejoignez notre Discord'
+                            tryBtn: 'Rejoignez notre Discord',
+                            lang: "FR"
                         },
                         sectionHero: {
                             title: 'VOTRE LIVESTREAM',
