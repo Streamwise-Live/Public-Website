@@ -63,6 +63,14 @@ header * {
     align-items: center;
 }
 
+.social-link {
+    width: 20px; 
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .nav-links .button {
     background-color: var(--color-text);
     color: var(--color-text-secondary);
