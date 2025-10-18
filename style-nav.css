@@ -10,7 +10,14 @@ header {
   margin: 0 auto;
   flex-wrap: wrap;
   padding: 1rem;
-  overflow: visible;
+  overflow: visible !important;
+}
+
+header {
+    overflow: visible !important;
+}
+header * {
+    overflow: visible !important;
 }
 
 .navbar nav {
@@ -56,6 +63,14 @@ header {
     align-items: center;
 }
 
+.social-link {
+    width: 20px; 
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .nav-links .button {
     background-color: var(--color-text);
     color: var(--color-text-secondary);
@@ -84,18 +99,23 @@ header {
 .nav-dropdown,
 .lang-dropdown {
     position: relative;
+    display: flex;
 }
 
 .nav-toggle,
 .lang-toggle {
     background: none;
     border: none;
-    color: var(--color-text-secondary);
+    color: black;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 500;
     display: flex;
     align-items: center;
+}
+
+.lang-preview {
+    margin-right: 10px;
 }
 
 .nav-menu,

@@ -13,7 +13,7 @@
     color: var(--color-text);
     text-align: center;
     min-height: calc(88vh - 100px);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .hero-content {
@@ -27,6 +27,7 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
     width: 100%;
+    z-index: 3;
 }
 
 .hero-text {
@@ -248,7 +249,7 @@
 
 .features-image.customize {
     height: 65vh;
-    margin-left: calc(-100vw + 100%);
+    margin-left: calc(-100vw - 100%);
     justify-content: flex-end;
     opacity: 0;
     transform: translateX(-200px);
@@ -328,6 +329,10 @@
     width: 300px;
     height: 300px;
     margin: 40px auto;
+}
+
+section * {
+    overflow-x: visible !important;
 }
 
 .orbit-center-image {
@@ -636,6 +641,14 @@
 
 
 @media (max-width: 768px) {
+    * {
+        overflow-x: hidden;
+    }
+
+    section {
+        overflow-x: visible !important;
+    }
+
     .only-mobile {
         display: flex !important;
     }
@@ -665,11 +678,16 @@
         justify-content: center;
         margin-left: 0;
         margin-right: 0;
+        padding-top: 1.5rem;
     }
 
     .hero-text {
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
     }
 
     .features-content {
@@ -680,12 +698,6 @@
         margin-right: 0 !important;
         margin-left: 0 !important;
         min-height: auto;
-    }
-
-    .features-image.realtime,
-    .features-image.customize,
-    .features-image.integration {
-        margin: 0;
     }
 
     .twitch-browser {
@@ -705,5 +717,9 @@
 
     .pricing-grid {
         grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+
+    .footer-section > .logo {
+        font-size: 1.5rem;
     }
 }

@@ -31,13 +31,14 @@ $(function () {
                             missionBtn: 'Mission',
                             pricingBtn: 'Pricing',
                             faqBtn: 'FAQ',
-                            tryBtn: 'Join our Discord'
+                            tryBtn: 'Open App',
+                            lang: "EN"
                         },
                         sectionHero: {
                             title: 'YOUR LIVESTREAM SO YOU DON\'T HAVE TO',
                             keywords: ["MODERATES", "EDITS", "FILTERS", "ENHANCES"],
                             description: 'Real-time AI audio/video moderation that blocks bans, prevents demonetization, and adapts to your style — so you can stream stress-free.',
-                            actionBtn: 'Book a demo'
+                            actionBtn: 'Register Now'
                         },
                         featuresSection: {
                             title: 'EFFORTLESS HIGH QUALITY.',
@@ -139,13 +140,14 @@ $(function () {
                             missionBtn: 'Mission',
                             pricingBtn: 'Prix',
                             faqBtn: 'FAQ',
-                            tryBtn: 'Rejoignez notre Discord'
+                            tryBtn: 'Ouvrir l\'app',
+                            lang: "FR"
                         },
                         sectionHero: {
                             title: 'VOTRE LIVESTREAM',
                             keywords: ["MODÈRE", "ÉDITE", "FILTRE", "AMÉLIORE"],
                             description: 'Modération audio/vidéo IA en temps réel qui bloque les bannissements, prévient la démonétisation et s\'adapte à votre style — pour que vous puissiez streamer sans stress.',
-                            actionBtn: 'Demander une démo'
+                            actionBtn: 'Inscrivez-vous maintenant'
                         },
                         featuresSection: {
                             title: 'QUALITÉ SANS EFFORT.',
