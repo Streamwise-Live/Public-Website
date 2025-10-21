@@ -188,7 +188,7 @@ $(function () {
                         },
                         pricingSection: {
                             title: 'Prix',
-                            description: 'Tout les prix en USD, par mois.',
+                            description: 'Streamwise utilise un système de prix basé sur le nombre d\'heures de streaming par mois.',
                             plans: {
                                 free: {
                                     name: 'Graduit',
