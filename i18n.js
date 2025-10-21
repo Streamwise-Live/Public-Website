@@ -34,6 +34,10 @@ $(function () {
                             tryBtn: 'Open App',
                             lang: "EN"
                         },
+                        tc2025: {
+                            text: "Meet us at TwitchCon 2025, San Diego from Oct 17 to 19 to get early access to the app.",
+                            button: "I got an invite code"
+                        },
                         sectionHero: {
                             title: 'YOUR LIVESTREAM SO YOU DON\'T HAVE TO',
                             keywords: ["MODERATES", "EDITS", "FILTERS", "ENHANCES"],
@@ -110,6 +114,9 @@ $(function () {
                             moreBtn2: 'Email',
                             condition: "OR"
                         },
+                        partnerSection : {
+                            title: 'OUR PARTNERS',
+                        },
                         footer: {
                             aboutSection: {
                                 title: 'About',
@@ -142,6 +149,10 @@ $(function () {
                             faqBtn: 'FAQ',
                             tryBtn: 'Ouvrir l\'app',
                             lang: "FR"
+                        },
+                        tc2025: {
+                            text: "Venez nous voir à TwitchCon 2025, à San Diego du 17 au 19 octobre pour obtenir un accès beta.",
+                            button: "J'ai un code d'accès"
                         },
                         sectionHero: {
                             title: 'VOTRE LIVESTREAM',
@@ -218,6 +229,9 @@ $(function () {
                             moreBtn1: 'Discord',
                             moreBtn2: 'Email',
                             condition: "OU"
+                        },
+                        partnerSection : {
+                            title: 'NOS PARTENAIRES',
                         },
                         footer: {
                             aboutSection: {
