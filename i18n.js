@@ -52,7 +52,7 @@ $(function () {
                             },
                             feature2: {
                                 title: 'Unlimited possibilities',
-                                description: 'Think beyond basic protection filters. Our modular tools let you personalize your stream your way, with full transparency and flexibility.'
+                                description: 'Think beyond basic protection filters. Our modular tools let you personalize your stream your way, with full transparency and flexibility, by detecting custom keywords in audio in real time, and applying edits to the stream based on your defined events.'
                             },
                             feature3: {
                                 title: 'Seamless integration',
@@ -62,13 +62,13 @@ $(function () {
                         },
                         creatorSection: {
                             title: 'CREATOR FIRST',
-                            description1: 'We believe livestreaming should be fun, creative, and safe for all content creators. No matter the platform, you deserve the freedom to own your stream and share your best content-without the fear of mistakes, sudden copyright strikes or unfair ToS violations.',
+                            description1: 'We believe livestreaming should be fun, creative, and safe for independant content creators of any scale. No matter the platform, you deserve the freedom to own your stream and share your best content-without the fear of mistakes, sudden copyright strikes or unfair ToS violations.',
                             description2: 'In a world where creators face constant pressure to produce more and better content, we\'re building a platform and community that offers the support and tools they need to thrive.',
                             moreBtn: 'See how this benefits you'
                         },
                         pricingSection: {
                             title: 'Pricing',
-                            description: 'All prices in USD, per month.',
+                            description: 'Streamwise has a tier-based pricing system based on the number of hours you stream per month.',
                             plans: {
                                 free: {
                                     name: 'Free',
@@ -98,14 +98,18 @@ $(function () {
                             onDemandDescription: 'Need more streaming time? Add on-demand hours anytime.'
                         },
                         faqSection: {
-                            q1: "Do you store my stream keys?",
-                            a1: "Yes, but keys are locked away once saved, which is why you cannot view them afterwards. You can update or delete them at any time. We are constantly working to improve our security measures to ensure your data is safe with us.",
-                            q2: "What do you run on my computer?",
-                            a2: "Nothing. Streamwise runs in the cloud as a secure middleman between your recording tool and your streaming platforms.",
-                            q3: "What platforms/tools is it compatible with?",
-                            a3: "Any destination that accepts the standard streaming protocol. Works with recording tools like OBS or Streamlabs and platforms like Twitch, YouTube, and Kick.",
-                            q4: "How much latency does it introduce?",
-                            a4: "We only introduce about 3 to 5 seconds of additional latency depending on your region and stream settings. We continuously optimize to keep this as low as possible."
+                            qsetup: "How easy is it to set up?",
+                            asetup: "Streamwise is designed to be as easy to set up as possible. We use a one time setup system, meaning you’ll only need to access our web dashboard for the initial setup, and if you want to modify some action or reaction events.",
+                            qstreamkeys: "Do you store my stream keys?",
+                            astreamkeys: "Yes, but keys are locked away once saved, which is why you cannot view them afterwards. You can update or delete them at any time. We are constantly working to improve our security measures to ensure your data is safe with us.",
+                            qmycomputer: "What do you run on my computer?",
+                            amycomputer: "Nothing. Streamwise runs in the cloud as a secure middleman between your recording tool and your streaming platforms.",
+                            qcompatible: "What platforms/tools is it compatible with?",
+                            acompatible: "Any destination that accepts the standard streaming protocol. Works with recording tools like OBS or Streamlabs and platforms like Twitch, YouTube, and Kick.",
+                            qlatency: "How much latency does it introduce?",
+                            alatency: "We only introduce about 3 to 5 seconds of additional latency depending on your region and stream settings. We continuously optimize to keep this as low as possible.",
+                            qlang: "What languages does your model work on?",
+                            alang: "Currently we only support English, but future support for other languages is being worked on."
                         },
                         trySection: {
                             title: 'INTERESTED IN BETA TESTING?',
@@ -168,7 +172,7 @@ $(function () {
                             },
                             feature2: {
                                 title: 'Possibilités illimitées',
-                                description: 'Allez au-delà des filtres de base. Nos outils modulaires vous permettent de personnaliser votre stream à votre manière en toute transparence et flexibilité.'
+                                description: 'Allez au-delà des filtres de base. Nos outils modulaires vous permettent de personnaliser votre stream à votre manière en toute transparence et flexibilité. Nous détectons en temps réel vos mots-clés personnalisés dans l\'audio et appliquons des modifications au stream en fonction de vos événements définis.'
                             },
                             feature3: {
                                 title: 'Intégration fluide',
@@ -214,14 +218,18 @@ $(function () {
                             onDemandDescription: 'Besoin de plus de temps de streaming? Ajoutez des heures à la demande à tout moment.'
                         },
                         faqSection: {
-                            q1: "Conservez-vous mes clés de stream?",
-                            a1: "Oui, mais les clés sont verrouillées une fois enregistrées, c'est pourquoi vous ne pouvez plus les consulter ensuite. Par contre, Vous pouvez les mettre à jour ou les supprimer à tout moment. Nous travaillons en permanence à améliorer nos mesures de sécurité afin de garantir que vos données soient en sécurité avec nous.",
-                            q2: "Qu'est-ce qui roule sur mon ordinateur avec vous?",
-                            a2: "Rien. Streamwise fonctionne dans le cloud comme intermédiaire sécurisé entre votre outil d'enregistrement et vos plateformes de streaming.",
-                            q3: "Avec quelles plateformes/outils est-ce compatible?",
-                            a3: "Toute destination qui accepte le protocole standard de streaming. Fonctionne avec des outils d'enregistrement comme OBS ou Streamlabs et des plateformes comme Twitch, YouTube et Kick.",
-                            q4: "Quelle délai sur la vidéo cela introduit-il?",
-                            a4: "Nous n'ntroduisons qu'environ 3 à 5 secondes de latence supplémentaire selon votre région et vos paramètres de stream. Nous optimisons continuellement afin de maintenir ce délai aussi bas que possible."
+                            qsetup: "À quel point est-ce facile à configurer?",
+                            asetup: "Streamwise est conçu pour être aussi facile à configurer que possible. Nous utilisons un système de configuration unique, ce qui signifie que vous n'aurez besoin d'accéder à notre tableau de bord web que pour la configuration initiale ou si vous souhaitez modifier certains événements d'action ou de réaction.",
+                            qstreamkeys: "Conservez-vous mes clés de stream?",
+                            astreamkeys: "Oui, mais les clés sont verrouillées une fois enregistrées, c'est pourquoi vous ne pouvez plus les consulter ensuite. Par contre, Vous pouvez les mettre à jour ou les supprimer à tout moment. Nous travaillons en permanence à améliorer nos mesures de sécurité afin de garantir que vos données soient en sécurité avec nous.",
+                            qmycomputer: "Qu'est-ce qui roule sur mon ordinateur avec vous?",
+                            amycomputer: "Rien. Streamwise fonctionne dans le cloud comme intermédiaire sécurisé entre votre outil d'enregistrement et vos plateformes de streaming.",
+                            qcompatible: "Avec quelles plateformes/outils est-ce compatible?",
+                            acompatible: "Toute destination qui accepte le protocole standard de streaming. Fonctionne avec des outils d'enregistrement comme OBS ou Streamlabs et des plateformes comme Twitch, YouTube et Kick.",
+                            qlatency: "Quelle délai sur la vidéo cela introduit-il?",
+                            alatency: "Nous n'ntroduisons qu'environ 3 à 5 secondes de latence supplémentaire selon votre région et vos paramètres de stream. Nous optimisons continuellement afin de maintenir ce délai aussi bas que possible.",
+                            qlang: "Sur quelles langues votre modèle fonctionne-t-il?",
+                            alang: "Actuellement, il fonctionne seulement en anglais, mais le support d'autres langues est en cours de développement."
                         },
                         trySection: {
                             title: 'INTÉRESSÉ(E) PAR LE PROGRAMME BÊTA?',
