@@ -597,6 +597,55 @@ section * {
     font-size: 1rem;
 }
 
+.partners {
+    background-color: var(--color-background-primary);
+    color: var(--color-text-primary);
+    padding: 3rem 1rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.partners h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.partners-image-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: clamp(1rem, 1.5vw, 1.25rem);
+    margin: 2rem 0rem;
+    align-items: center;
+}
+
+.partners-image-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+.partners-image-item img {
+    max-height: 150px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Medium screens, 2x2 partners */
+@media (max-width: 1200px) {
+    .partners-image-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small screens, 1 column for partners */
+@media (max-width: 750px) {
+    .partners-image-row {
+        grid-template-columns: 1fr;
+    }
+}
+
 .device-wrapper {
   position: relative;
   width: 100%;
