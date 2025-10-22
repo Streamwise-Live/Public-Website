@@ -616,33 +616,33 @@ section * {
     gap: clamp(1rem, 1.5vw, 1.25rem);
     margin: 2rem 0rem;
     align-items: center;
+    justify-items: center;
 }
 
 .partners-image-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 150px;
 }
 
 .partners-image-item img {
-    max-height: 150px;
-    width: auto;
+    width: 100%;
+    max-height: 100%;
+    align-self: center;
     display: block;
     object-fit: contain;
 }
 
 /* Medium screens, 2x2 partners */
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
     .partners-image-row {
         grid-template-columns: repeat(2, 1fr);
     }
-}
+    .partners-image-item img {
+        max-width: 75%;
+        max-height: 75%;
+        margin: 0 auto;
 
-/* Small screens, 1 column for partners */
-@media (max-width: 750px) {
-    .partners-image-row {
-        grid-template-columns: 1fr;
     }
 }
 
