@@ -191,7 +191,7 @@ $(function () {
                             description: 'Streamwise utilise un système de prix basé sur le nombre d\'heures de streaming par mois.',
                             plans: {
                                 free: {
-                                    name: 'Graduit',
+                                    name: 'Gratuit',
                                     price: '0',
                                     feature: '10 heures incluses',
                                     buyBtn: 'Demander une démo'
