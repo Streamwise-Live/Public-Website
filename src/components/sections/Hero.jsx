@@ -63,8 +63,7 @@ export default function Hero() {
           at the speed of sound.
         </h1>
         <p className="mt-6 text-lg md:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
-          The engine-agnostic voice safety layer that detects, classifies, and
-          acts on harmful audio before it reaches your audience.
+          The real-time voice control layer that prevents harmful audio before it reaches your audience.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button href="https://app.streamwise.gg">

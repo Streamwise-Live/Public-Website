@@ -1,6 +1,6 @@
 export const features = [
   {
-    title: 'Logic Dashboard & Real-Time Triggers',
+    title: 'Logic Dashboard & Real-Time Intervetions',
     description:
       'Inject custom context about your users, set custom rules, and trigger real-time interventions from auto-muting to comedic sound effects.',
     icon: 'logic',

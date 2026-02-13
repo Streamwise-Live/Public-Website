@@ -13,7 +13,7 @@ const phases = [
     era: '2020–2024',
     title: 'The Police State',
     description:
-      'Rising civil fines and the realization that toxicity drives user churn. Moderation focuses on "catch and punish".',
+      'Rising civil fines and the realization that toxicity drives user churn. Moderation focuses to automatic "catch and punish".',
     color: 'text-red-400',
     dot: 'bg-red-400',
     glow: 'shadow-red-400/40',
@@ -22,7 +22,7 @@ const phases = [
     era: '2026+',
     title: 'The Clean Room',
     description:
-      'Users and platforms are held liable for their content. Data storage like voiceprints becomes high-risk. The focus shifts to "clean and prevent".',
+      'Users and platforms are held liable for their content. Data storage like voiceprints becomes high-risk. The focus shifts to real-time intervention.',
     color: 'text-cobalt',
     dot: 'bg-cobalt',
     glow: 'shadow-cobalt/40',
