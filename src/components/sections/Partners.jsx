@@ -1,8 +1,8 @@
 const partners = [
-  { name: 'McGill Engine', src: '/assets/partners/engine-logo.png' },
-  { name: 'NEXT AI', src: '/assets/partners/nextai-logo.png' },
-  { name: 'MILA', src: '/assets/partners/mila-logo.png' },
-  { name: 'Creative Destruction Lab', src: '/assets/partners/cdl-logo.png' },
+  { name: 'McGill Engine', src: '/assets/partners/engine-logo.png', url: 'https://www.mcgill.ca/engine/' },
+  { name: 'NEXT AI', src: '/assets/partners/nextai-logo.png', url: 'https://www.nextcanada.com/next-ai' },
+  { name: 'MILA', src: '/assets/partners/mila-logo.png', url: 'https://mila.quebec' },
+  { name: 'Creative Destruction Lab', src: '/assets/partners/cdl-logo.png', url: 'https://creativedestructionlab.com' },
 ]
 
 export default function Partners() {
@@ -17,12 +17,18 @@ export default function Partners() {
         </p>
         <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16">
           {partners.map((p) => (
-            <img
+            <a
               key={p.name}
-              src={p.src}
-              alt={p.name}
-              className="h-10 md:h-12 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
-            />
+              href={p.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={p.src}
+                alt={p.name}
+                className="h-10 md:h-12 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+              />
+            </a>
           ))}
         </div>
       </div>

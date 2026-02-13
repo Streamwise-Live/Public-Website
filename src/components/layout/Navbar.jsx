@@ -4,7 +4,7 @@ import Button from '../ui/Button'
 const navLinks = [
   { label: 'Features', href: '#features' },
   { label: 'Demo', href: '#demo' },
-  { label: 'SDK', href: '#sdk' },
+  { label: 'Integration', href: '#sdk' },
 ]
 
 export default function Navbar() {

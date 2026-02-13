@@ -35,7 +35,7 @@ export default function FeatureGrid() {
           Your live stream <span className="text-cobalt">engineer</span>
         </h2>
         <p className="text-slate-400 text-center mb-16 max-w-xl mx-auto">
-          Real-time voice intelligence that works the way you need it to — not the other way around.
+          Real-time stream intelligence that works the way you need it to and not the other way around.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {features.map((f) => (

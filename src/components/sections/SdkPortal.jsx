@@ -9,7 +9,7 @@ export default function SdkPortal() {
         {/* Left column */}
         <div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ship <span className="text-cobalt">safer</span>, faster
+            Stream <span className="text-cobalt">safer</span>, faster
           </h2>
           <p className="text-slate-400 mb-2 text-lg">
             Get started in under 5 minutes.
@@ -23,12 +23,12 @@ export default function SdkPortal() {
             Already streaming? Streamwise plugs directly into platforms like{' '}
             <span className="text-white font-medium">Twitch</span>,{' '}
             <span className="text-white font-medium">YouTube</span>, and tools
-            like <span className="text-white font-medium">OBS Studio</span>{' '}
-            — no SDK required. Use our built-in integrations to start
+            like <span className="text-white font-medium">OBS Studio</span>
+            , no code or SDK required. Use our built-in integrations to start
             moderating in seconds.
           </p>
-          <Button href="https://discord.gg/BMTmMMAwUc">
-            Request SDK Access
+          <Button href="https://app.streamwise.gg">
+            Open App
           </Button>
         </div>
 
@@ -77,10 +77,6 @@ function YouTubeIcon() {
 
 function OBSIcon() {
   return (
-    <svg className="w-14 h-14 md:w-16 md:h-16" viewBox="0 0 24 24" fill="none">
-      <circle cx="12" cy="12" r="11" fill="#302E31" />
-      <path d="M12 3a9 9 0 100 18 9 9 0 000-18zm0 2.5c1.38 0 2.63.56 3.54 1.46A4.98 4.98 0 0117 10.5c0 2.76-2.24 5-5 5s-5-2.24-5-5c0-1.38.56-2.63 1.46-3.54A4.98 4.98 0 0112 5.5z" fill="white" />
-      <circle cx="12" cy="10.5" r="2.5" fill="white" />
-    </svg>
+    <img src="/assets/obs.svg" alt="OBS Studio" className="w-14 h-14 md:w-16 md:h-16" />
   )
 }

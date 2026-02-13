@@ -50,11 +50,11 @@ export default function Hero() {
         <h1 className="text-5xl md:text-7xl font-black uppercase leading-tight tracking-tight">
           Streamwise{' '}
           {/* Inline wrapper that reserves the width of the longest word */}
-          <span className="text-cobalt inline-block relative align-bottom">
+          <span className="text-cobalt inline-block relative align-bottom text-center">
             {/* Invisible longest word to hold width */}
             <span className="invisible">{LONGEST}</span>
-            {/* Actual typed text layered on top, left-aligned */}
-            <span className="absolute left-0 top-0">
+            {/* Actual typed text layered on top, centered on mobile, left-aligned on desktop */}
+            <span className="absolute inset-x-0 top-0 md:left-0 md:right-auto">
               {text}
               <span className="animate-blink ml-0.5 inline-block w-[3px] h-[0.75em] bg-cobalt align-middle" />
             </span>
@@ -64,14 +64,14 @@ export default function Hero() {
         </h1>
         <p className="mt-6 text-lg md:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
           The engine-agnostic voice safety layer that detects, classifies, and
-          acts on harmful audio — before it reaches your audience.
+          acts on harmful audio before it reaches your audience.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button href="https://discord.gg/BMTmMMAwUc">
-            Request SDK Access
+          <Button href="https://app.streamwise.gg">
+            Open App
           </Button>
-          <Button variant="outline" href="#">
-            View Documentation
+          <Button variant="outline" href="https://app.streamwise.gg/join">
+            Register now
           </Button>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import GlassCard from '../ui/GlassCard'
+import { useState } from 'react'
 
 const phases = [
   {
@@ -6,7 +6,8 @@ const phases = [
     title: 'The Wild West',
     description: 'Moderation was minimal or purely reactive manual reviews.',
     color: 'text-amber-400',
-    border: 'border-amber-500/30',
+    dot: 'bg-amber-400',
+    glow: 'shadow-amber-400/40',
   },
   {
     era: '2020–2024',
@@ -14,15 +15,17 @@ const phases = [
     description:
       'Rising civil fines and the realization that toxicity drives user churn. Moderation focuses on "catch and punish".',
     color: 'text-red-400',
-    border: 'border-red-500/30',
+    dot: 'bg-red-400',
+    glow: 'shadow-red-400/40',
   },
   {
     era: '2026+',
-    title: 'The Clean Standard',
+    title: 'The Clean Room',
     description:
       'Users and platforms are held liable for their content. Data storage like voiceprints becomes high-risk. The focus shifts to "clean and prevent".',
     color: 'text-cobalt',
-    border: 'border-cobalt/30',
+    dot: 'bg-cobalt',
+    glow: 'shadow-cobalt/40',
     active: true,
   },
 ]
@@ -37,28 +40,59 @@ export default function IndustryContext() {
           </h2>
           <p className="text-slate-400 max-w-2xl mx-auto leading-relaxed">
             Live streaming is projected to reach{' '}
-            <span className="text-white font-semibold">$1,234.2 billion by 2033</span>{' '}
-            at a 27% CAGR — expanding across entertainment, commerce, healthcare,
+            <span className="text-white font-semibold">$1,234.2 billion by 2033</span>
+            , expanding across entertainment, commerce, healthcare,
             education, and the enterprise. As the market scales, so does the need
             for moderation.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {phases.map((phase) => (
-            <GlassCard
-              key={phase.era}
-              className={`p-8 ${phase.border} ${phase.active ? 'ring-1 ring-cobalt/30' : ''} hover:border-cobalt/40 transition-colors`}
-            >
-              <span className={`text-xs font-mono font-bold uppercase tracking-wider ${phase.color}`}>
-                {phase.era}
-              </span>
-              <h4 className="text-xl font-bold mt-2 mb-3">{phase.title}</h4>
-              <p className="text-slate-400 text-sm leading-relaxed">{phase.description}</p>
-            </GlassCard>
-          ))}
+        {/* Horizontal timeline */}
+        <div className="relative max-w-3xl mx-auto">
+          {/* Line */}
+          <div className="absolute top-4 left-0 right-0 h-px bg-gradient-to-r from-amber-400/40 via-red-400/40 to-cobalt/60" />
+
+          <div className="relative flex justify-between">
+            {phases.map((phase) => (
+              <TimelinePoint key={phase.era} phase={phase} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
+  )
+}
+
+function TimelinePoint({ phase }) {
+  const [hovered, setHovered] = useState(false)
+
+  return (
+    <div
+      className="relative flex flex-col items-center"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      {/* Dot */}
+      <div
+        className={`w-8 h-8 rounded-full ${phase.dot} border-4 border-midnight cursor-pointer
+          transition-shadow duration-300 ${hovered ? `shadow-[0_0_12px_4px] ${phase.glow}` : ''}`}
+      />
+
+      {/* Label */}
+      <span className={`mt-3 text-xs font-mono font-bold uppercase tracking-wider ${phase.color}`}>
+        {phase.era}
+      </span>
+      <span className={`text-sm font-semibold mt-1 ${phase.color}`}>
+        {phase.title}
+      </span>
+
+      {/* Tooltip */}
+      <div
+        className={`absolute top-full mt-10 w-64 glass-card p-4 text-left transition-all duration-200 z-20
+          ${hovered ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-2 pointer-events-none'}`}
+      >
+        <p className="text-slate-300 text-xs leading-relaxed">{phase.description}</p>
+      </div>
+    </div>
   )
 }
